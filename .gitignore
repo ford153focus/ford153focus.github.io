@@ -1,0 +1,12 @@
+_site/
+.sass-cache/
+.jekyll-metadata
+<<<<<<< HEAD
+<<<<<<< HEAD
+.idea/
+=======
+/.idea/
+>>>>>>> cfc7c39... initial 2
+=======
+.idea/
+>>>>>>> 3f844a4... qa

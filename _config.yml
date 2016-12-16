@@ -1,0 +1,58 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> cfc7c39... initial 2
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Focus' Tech Blog
+email: ford153focus@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+<<<<<<< HEAD
+<<<<<<< HEAD
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://ford153focus.github.io" # the base hostname & protocol for your site
+twitter_username: ford153focus
+github_username:  ford153focus
+
+# Build settings
+markdown: kramdown
+
+exclude: [vendor]
+
+sass:
+    sass_dir: _sass
+=======
+theme: jekyll-theme-architect
+>>>>>>> 4cac814... Set theme jekyll-theme-architect
+=======
+baseurl: "" # the subpath of your site, e.g. /blog
+=======
+baseurl: "/" # the subpath of your site, e.g. /blog
+>>>>>>> b5d47a4... qa update
+url: "http://ford153focus.github.io" # the base hostname & protocol for your site
+twitter_username: ford153focus
+github_username:  ford153focus
+
+# Build settings
+markdown: kramdown
+<<<<<<< HEAD
+>>>>>>> cfc7c39... initial 2
+=======
+
+exclude: [vendor]
+<<<<<<< HEAD
+>>>>>>> 59f1f6f... qa update
+=======
+
+sass:
+    sass_dir: _sass
+>>>>>>> b5d47a4... qa update
