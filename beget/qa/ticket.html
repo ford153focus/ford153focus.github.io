@@ -1,136 +1,147 @@
 ---
 layout: lor-page
+title:  "Quick answers"
 ---
 
 <div class="qa">
     <table>
-        <tbody>
+        <thead>
         <tr>
             <td>Segment</td>
             <td>Question</td>
             <td>Answer</td>
         </tr>
-        <tr class="done">
+        </thead>
+        <tbody class="done">
+        <tr>
             <td>done</td>
             <td> Ready</td>
             <td> Здравствуйте. Готово.</td>
         </tr>
-        <tr class="done">
+        <tr>
             <td>done</td>
             <td> Ready with check</td>
             <td> Здравствуйте. Готово, проверьте пожалуйста.</td>
         </tr>
-        <tr class="done">
+        <tr>
             <td>done</td>
             <td> Ready with timeout and check</td>
             <td> Здравствуйте. Готово, проверьте через 5-15 минут.</td>
         </tr>
-        <tr class="done">
+        <tr>
             <td>done</td>
             <td> Long</td>
             <td> Здравствуйте. Проблема не очевидна и требует некоторого времени для решения. Ожидайте пожалуйста.</td>
         </tr>
-        <tr class="done">
+        <tr>
             <td>done</td>
             <td> клиент решил сам</td>
             <td> Здравствуйте. <br><br> Я так понимаю, ваша проблема уже решена? Мы можем как-то помочь?</td>
         </tr>
-        <tr class="done_c">
+        </tbody>
+        <tbody class="done_c">
+        <tr>
             <td>done with comment</td>
             <td> BOM</td>
             <td> Здравствуйте. Готово, проверьте пожалуйста. <br><br> Напоминаем, что файлы, загружаемые на хостинг, должен не содержать BOM-символ.</td>
         </tr>
-        <tr class="done_c">
+        <tr>
             <td>done with comment</td>
             <td> DNS fix</td>
             <td> Здравствуйте. Поправил DNS-записи, проверьте через 15-35 минут.</td>
         </tr>
-        <tr class="done_c">
+        <tr>
             <td>done with comment</td>
             <td> Domain move</td>
             <td> Здравствуйте. Готово, домены на вашем аккаунте.</td>
         </tr>
-        <tr class="done_c">
+        <tr>
             <td>done with comment</td>
             <td> Php version or directives</td>
             <td> Здравствуйте. Готово, проверьте через 5-15 минут. Также вы можете сменить версию РНР и настройки интерпретатора PHP самостоятельно на https://cp.beget.ru/sites , кликнув на иконку РНР напротив нужного домена.</td>
         </tr>
-        <tr class="done_c">
+        <tr>
             <td>done with comment</td>
             <td> Settings was changed</td>
             <td> Здравствуйте. Изменили настройки, проверьте через 5-15 минут.</td>
         </tr>
-        <tr class="thx">
+        </tbody>
+        <tbody class="thx">
+        <tr>
             <td>thx</td>
             <td> Default</td>
             <td> Всегда рады помочь, обращайтесь</td>
         </tr>
-        <tr class="thx">
+        <tr>
             <td>thx</td>
             <td> When answer is not perfect</td>
             <td> Если возникнут какие-либо дополнительные вопросы, обращайтесь. Мы всегда рады помочь.</td>
         </tr>
-        <tr class="thx">
+        <tr>
             <td>thx</td>
             <td> we are sorry</td>
             <td> Приносим наши искренние извинения за возникшие неудобства.</td>
         </tr>
-        <tr class="thx">
+        <tr>
             <td>thx</td>
             <td> no comment left</td>
             <td> К сожалению, рабочая смена сотрудника, решавшего ваш тикет, закончилась и сотрудник уже покинул рабочее место. Он не оставил комментария о том, как он решил вашу проблему, но отпишется вам как только придёт на рабочее место.</td>
         </tr>
-        <tr class="fails">
+        </tbody>
+        <tbody class="fails">
+        <tr>
             <td>fails</td>
             <td> already fixed</td>
             <td> Здравствуйте. На сервере был кратковременный сбой. Системные администраторы уже локализовали и решили проблему. Проверьте, актуальна ли проблема в данный момент?</td>
         </tr>
-        <tr class="fails">
+        <tr>
             <td>fails</td>
             <td> overload</td>
             <td> Здравствуйте. На сервере был зафиксирован скачок нагрузки, что привело к деградации качества передачи данных. Проблема была исправлена в течение 15 минут. На данный момент всё должно работать корректно. Приносим извинения за временные неудобства.</td>
         </tr>
-        <tr class="fails">
+        <tr>
             <td>fails</td>
             <td> reboot</td>
             <td> Здравствуйте. Плановая перезагрузка ПО на сервере. Всё должно заработать с минуты на минуту</td>
         </tr>
-        <tr class="fails">
+        <tr>
             <td>fails</td>
             <td> server software is updating</td>
             <td> Здравствуйте. Внеплановое обновление ПО на сервере. Системные администраторы должны закончить работы через 5-25 минут.</td>
         </tr>
-        <tr class="fails">
+        <tr>
             <td>fails</td>
             <td> we are under ddos</td>
             <td> Здравствуйте. В данный момент на сервер проводится серьёзная DDOS-атака. Системные администраторы занимаются проблемой и обещают скоро отбить её.</td>
         </tr>
-        <tr class="fails">
+        <tr>
             <td>fails</td>
             <td> work in progress</td>
             <td> Здравствуйте. Временный сбой на сервере. Системные администраторы уже оповещены и занимаются решением проблемы. Ожидаем решения проблемы через 5-25 минут.</td>
         </tr>
-        <tr class="fails">
+        <tr>
             <td>fails</td>
             <td> work in progress 2</td>
             <td> Здравствуйте. Временный сбой на сервере. Системные администраторы уже оповещены и занимаются решением проблемы. Ожидаем решения проблемы в ближайшее время.</td>
         </tr>
-        <tr class="ticket_transfer">
+        </tbody>
+        <tbody class="ticket_transfer">
+        <tr>
             <td>ticket transers</td>
             <td> to system administrators</td>
             <td> Здравствуйте. Ваш тикет передан системным администраторам.</td>
         </tr>
-        <tr class="ticket_transfer">
+        <tr>
             <td>ticket transers</td>
             <td> to system administrators (en)</td>
             <td> Hello. Your ticket is assigned to a system administrators.</td>
         </tr>
-        <tr class="ticket_transfer">
+        <tr>
             <td>ticket transers</td>
             <td> to managers</td>
             <td> Здравствуйте. Ваш тикет передан в отдел по работе с клиентами.</td>
         </tr>
-        <tr class="ticket_transfer">
+        <tr>
             <td>ticket transers</td>
             <td> to managers (en)</td>
             <td> Hello! <br><br> Your ticket is assigned to managers of сustomer service department <br><br> Please wait for their response</td>
@@ -140,16 +151,13 @@ layout: lor-page
             <td> to bookkeeping</td>
             <td> Здравствуйте. Ваш тикет передан в бухгалтерию.</td>
         </tr>
-        <tr class="ticket_transfer">
+        <tr>
             <td>ticket transers</td>
             <td> to developers</td>
             <td> Здравствуйте. Ваш тикет передан в отдел Разработки.</td>
         </tr>
-        <tr>
-            <td>2017</td>
-            <td> Прошу зачислить мне бонусы</td>
-            <td> Здравствуйте. <br><br> Перед зачислением бонусов нам необходимо проверить ваш аккаунт на предыдущем хостинге не совместимость с акцией. <br><br> Эти занимаются наши менеджера отдела по работе с клиентами и для проверки им потребуется доступ в личный кабинет на предыдущем хостинге. <br><br> Просим уточнить предыдущего хостинг-провайдера и связку логин/пароль от личного кабинета на нём.</td>
-        </tr>
+        </tbody>
+        <tbody class="account">
         <tr>
             <td>account</td>
             <td> manual block</td>
@@ -185,6 +193,8 @@ layout: lor-page
             <td> rename account</td>
             <td> Здравствуйте. К сожалению, переименование аккаунта не реализовано на нашем хостинге. Вы можете создать новый аккаунт с нужным логином и перенести всё на новый логин. Обращаем внимание, что при регистрации вы можете задать ваш логин самостоятельно - https://drive.google.com/file/d/0B67GYtU3HCSbU2dFZGg5dTIxQVE/view?usp=drivesdk</td>
         </tr>
+        </tbody>
+        <tbody class="backup">
         <tr>
             <td>backup</td>
             <td> backup entire account</td>
@@ -207,6 +217,8 @@ layout: lor-page
             <td> what we will restore</td>
             <td> Здравствуйте. Уточните сайт который нужно восстановить, что нужно восстановить (файлы и/или базу данных) и дату, на которую нужно откатить сайт.</td>
         </tr>
+        </tbody>
+        <tbody class="blocked">
         <tr>
             <td>blocked</td>
             <td> begetok</td>
@@ -247,6 +259,8 @@ layout: lor-page
             <td> udp</td>
             <td> Здравствуйте. К сожалению, по умолчанию у нас на хостинге запрещены исходящие запросы по UDP. Но наши системные администраторы вносят исключения по запросу наших клиентов. Для этого нужно <br> 1) чтобы аккаунт был оплачен хотя бы на месяц <br> 2) нужно уточнить нужный сайт <br> 3) нужно уточнить нужный порт (или диапазон портов)</td>
         </tr>
+        </tbody>
+        <tbody>
         <tr>
             <td>cms</td>
             <td> cms logo is now shown</td>
@@ -267,6 +281,8 @@ layout: lor-page
             <td> have you ddos defend?</td>
             <td> Здравствуйте. К сожалению, на данный момент нет - мы не предоставляем защиту от DDOS-атак.</td>
         </tr>
+        </tbody>
+        <tbody class="define">
         <tr>
             <td>define</td>
             <td> date of backup</td>
@@ -282,6 +298,8 @@ layout: lor-page
             <td> a, mx</td>
             <td> Здравствуйте. Вы можете изменить нужные DNS-записи вашего домена на https://cp.beget.com/dns . Выбирайте нужный домен в селекторе ниже надписи "Выберите домен:" и кликайте "Редактировать зону". Не забудьте нажать "Применить изменения" в конце странички.</td>
         </tr>
+        </tbody>
+        <tbody class="dns">
         <tr>
             <td>dns</td>
             <td> ns</td>
@@ -302,6 +320,8 @@ layout: lor-page
             <td> Данный домен не делегирован DNS-серверам Beget</td>
             <td> Здравствуйте. Это надпись появляется после того, как вы изменили NS-записи и сообщает о том, что все изменения в нижней части страницы (редактор dns-записей) теперь недействительны. Если изменение NS-записей и было вашей целью, на данную плашку можно не обращать внимание.</td>
         </tr>
+        </tbody>
+        <tbody class="domain">
         <tr>
             <td>domain</td>
             <td> bget.ru vs beget.tech</td>
@@ -347,11 +367,14 @@ layout: lor-page
             <td> tech domain - what is it</td>
             <td> Здравствуйте. Это полноценный поддомен, выдаваемый бесплатно и бессрочно каждому клиенту нашего хостинга. Его можно использовать для любых целей. Ограничен он только в отсутствии почты (нельзя создать почтовый ящик) и бесплатного ssl-сертификата (нельзя установить какой-либо сертификат, не приобретя выделенный IP)ё</td>
         </tr>
+        </tbody>
+        <tbody class="fm_ftp">
         <tr>
             <td>file manager</td>
             <td> my computer</td>
             <td> Здравствуйте. <br><br> Браузеры Chrome ( https://www.java.com/ru/download/faq/chrome.xml ) и Firefox ( https://www.java.com/ru/download/help/firefox_java.xml ) отключили поддержку NPAPI-плагинов (в их числе и Java). В браузере Microsoft Edge её не было изначально. <br><br> Таким образом пункт "Мой компьютер" на данный момент доступен только в браузере Internet Explorer (на Microsoft Windows) и Safari (на Apple MacOs)</td>
         </tr>
+
         <tr>
             <td>ftp</td>
             <td> no more space in account</td>
@@ -382,6 +405,8 @@ layout: lor-page
             <td> your ip was blocked</td>
             <td> Здравствуйте. Разблокировали IP. Будьте аккуратнее при вводе пароля. При большом количестве авторизаций с неверным паролем система заносит IP в список заблокированных.</td>
         </tr>
+        </tbody>
+        <tbody class="free">
         <tr>
             <td>free</td>
             <td> Jetpack</td>
@@ -402,6 +427,8 @@ layout: lor-page
             <td> no mail on free</td>
             <td> Здравствуйте. К сожалению, mail() на FreeHosting отсутствует. Вы можете использовать сторонние почтовые сервера (Gmail, Yandex, Mail.Ru и прочие), настроив вашу CMS соответствующим образом (если такой функционал в ней заложен) или переписать функцию отправки почты с применением библиотеки PhpMailer (или любой другой). <br><br> Данное ограничение было введено для противодействия нарушителям правил хостинга, которые использовали бесплатный хостинг для рассылки спама. <br><br> Также функция почты присутствует на любом платном тарифе</td>
         </tr>
+        </tbody>
+        <tbody class="htaccess">
         <tr>
             <td>htaccess</td>
             <td> php.ini access</td>
@@ -412,6 +439,8 @@ layout: lor-page
             <td> memory limit</td>
             <td> Здравствуйте. Допишите строку `php_value memory_limit 512M` в начало файла `.htaccess` , который находится в директории сайта. Если такого файла нет - создайте его. Если ошибка останется - увеличьте цифру.</td>
         </tr>
+        </tbody>
+        <tbody class="mail">
         <tr>
             <td>mail</td>
             <td> avatar</td>
@@ -457,6 +486,8 @@ layout: lor-page
             <td> noreply@unverified.beget.ru (WP CF7)</td>
             <td> Здравствуйте. <br><br> Во избежание подстановки, вам необходимо в поле отправителя (FROM) в заголовке письма указывать такой адрес, домен которого находится на вашем аккаунте. Например, info@domain.com . <br><br> Это делается в настройках вашей CMS или в коде вашего сайта. В случае плагина Contact Form 7 на CMS WordPress - перейдите на %адрес вашего сайта%/wp-admin/admin.php?page=wpcf7 , кликните на "Изменить" у нужной контактной формы, таб "Письмо", поле "From". ( https://drive.google.com/file/d/0B67GYtU3HCSbUGVTZ3pJSXB4TzA/view?usp=drivesdk ) <br><br> Механизм подстановки был введен как мера по борьбе с рассылкой спама с наших серверов, попаданием ваших писем в спам и наших серверов в черные списки. <br><br> Если необходимо, чтобы ответ пользователя приходил не на доменную почту, а на другой e-mail - вы можете указать его в поле REPLY-TO</td>
         </tr>
+        </tbody>
+        <tbody class="moves">
         <tr>
             <td>moves</td>
             <td> Domain move</td>
@@ -497,11 +528,15 @@ layout: lor-page
             <td> Where is the money Lebowski?</td>
             <td> Здравствуйте. Для переноса необходимо чтобы хотя бы один аккаунт был оплачен хотя бы на месяц хостинга.</td>
         </tr>
+        </tbody>
+        <tbody>
         <tr>
             <td>mts</td>
             <td> mts</td>
             <td> Здравствуйте. В МТС, насколько мы понимаем, опять сломали маршрутизацию и из сетей МТС, МГТС, Комстар и прочих дочек МТС действительно есть проблемы с доступом к сайтам, находящимся на нашем хостинге. И не только на нашем. Мы уже оповестили поддержку МТС о проблеме, заявку приняли в обработку и попросили, чтобы клиенты, имеющие проблемы, также самостоятельно обратились к ним. Поэтому просим вас обратиться в поддержку вашего провайдера - это сильно ускорит решение проблемы.</td>
         </tr>
+        </tbody>
+        <tbody class="mysql">
         <tr>
             <td>mysql</td>
             <td> can't load dump</td>
@@ -532,6 +567,8 @@ layout: lor-page
             <td> extensions and ftp</td>
             <td> Здравствуйте. Похожая проблема разбирается на http://oparin.info/web/opencart/oshibka-pri-ustanovke-rasshirenij-opencart-2-0 <br><br> Можете попробывать установить модификатор, указанный в этой статье.</td>
         </tr>
+        </tbody>
+        <tbody class="partner">
         <tr>
             <td>partner</td>
             <td> negative balance</td>
@@ -547,6 +584,8 @@ layout: lor-page
             <td> where is procent?</td>
             <td> Здравствуйте. Платёж, который произвёл ваш реферал, обрабатывается вручную менеджерами отдела по работе с клиентами и и обязательно будет начислен.</td>
         </tr>
+        </tbody>
+        <tbody class="payments">
         <tr>
             <td>payments</td>
             <td> attach the prove</td>
@@ -577,6 +616,8 @@ layout: lor-page
             <td> wrong prices</td>
             <td> Здравствуйте. На https://beget.ru/virtual-hosting и https://beget.ru/vip-hosting указаны цены при оплате хостинга сразу за год, о чём гласит надпись [Console]Цена указана за месяц при оплате за год[/Console] <br> Уточняющий скриншот - https://drive.google.com/file/d/0B67GYtU3HCSbRVA0UFJIU1EzRGs/view?usp=drivesdk <br> Ссылки "за месяц" и "за год" являются переключателями стоимости.</td>
         </tr>
+        </tbody>
+        <tbody>
         <tr>
             <td>php7</td>
             <td> what the profit? (wordpress)</td>
@@ -592,6 +633,8 @@ layout: lor-page
             <td> ip</td>
             <td> Здравствуйте. <br><br> Сервер использует IP ADDR для входящих соединений и IP ADDR для исходящих соединений. <br><br> Однако мы не рекомендуем использовать IP для указания в качестве адреса подключения в ftp/sftp/ssh/etc-клиентов. Во-первых адрес сервера может измениться (например из-за DDOS-атаки) или ваш аккаунт могут перенести на другой сервер (например если текущий перестал справляться с нагрузкой). Рекомендуем использовать ваш технический домен - `ваш_логин`.beget.tech</td>
         </tr>
+        </tbody>
+        <tbody class="sites">
         <tr>
             <td>sites</td>
             <td> defend my site (begetok)</td>
@@ -642,6 +685,8 @@ layout: lor-page
             <td> difference between let's encrypt and paid certificate</td>
             <td> Здравствуйте <br><br> Технически бесплатный сертификат от Let's Encrypt ничем не отличается от обычного платного сертификата (без wildcard и extended validation). <br><br> Но некоторые сервисы могут отказаться от работы с бесплатным сертификатом. Из известных примеров - из-за использования SNI, с бесплатными сертификатами отказывается работать Яндекс.Касса.</td>
         </tr>
+        </tbody>
+        <tbody class="ssl">
         <tr>
             <td>ssl</td>
             <td> install my ssl</td>
@@ -652,11 +697,15 @@ layout: lor-page
             <td> there is no green lock on my site (wordpress)</td>
             <td> Здравствуйте. Для появления "зелёного замка" необходимо чтобы абсолютно все файлы вашего сайта загружались по HTTPS, нужно перенастроить ваш сайт соответствующим образом. На данный же момент как минимум картинки вашего сайта загружаются по http. Вы можете попробывать установить плагин, который должен решить данную проблему - https://wordpress.org/plugins/ssl-insecure-content-fixer/ . Либо же воспользоваться инструкцией на https://managewp.com/wordpress-ssl-settings-and-how-to-resolve-mixed-content-warnings (Option 1)</td>
         </tr>
+        </tbody>
+        <tbody>
         <tr>
             <td>vps</td>
             <td> vps</td>
             <td> Здравствуйте. К сожалению, пока у нас нет услуги VPS. Планы по реализации VPS есть, работы в этом направлении ведутся, но каких-либо сроков дать не можем.</td>
         </tr>
+        </tbody>
+        <tbody class="ok">
         <tr>
             <td>we're Ok</td>
             <td> Actions mmade in CP going to wait</td>
@@ -692,6 +741,8 @@ layout: lor-page
             <td> Yandex.Metrika is liyng (2)</td>
             <td> Здравствуйте. С нашей стороны никаких ограничений нет, инструмент Яндекса ( https://webmaster.yandex.ru/robots.xml ) прекрасно видит и загружает "роботов" с ваших сайтов. Вам нужно уточнить у технической поддержки Яндекса - почему их поисковик не видит ваши сайты.</td>
         </tr>
+        </tbody>
+        <tbody class="other">
         <tr>
             <td>other</td>
             <td> system files</td>
@@ -717,24 +768,87 @@ layout: lor-page
 </div>
 
 <style>
-    .done {
+    .done tr {
         color: #151515;
         background-color: #00aa00;
     }
-    .done_c {
+
+    .done_c tr {
         color: #151515;
         background-color: #999900;
     }
-    .thx {
+
+    .thx tr {
         color: #151515;
         background-color: #00ff00;
     }
-    .fails {
+
+    .fails tr {
         color: #151515;
         background-color: red;
     }
-    .ticket_transfer {
+
+    .ticket_transfer tr {
         color: #151515;
         background-color: yellow;
     }
+
+    .account tr {
+        color: #151515;
+        background-color: #9eb9c7;
+    }
+
+    .backup tr {
+        color: #151515;
+        background-color: #009999;
+    }
+
+    .blocked tr {
+        color: #151515;
+        background-color: red;
+    }
+
+    .dns tr, .domain tr {
+        color: #151515;
+        background-color: #9398ff;
+    }
+
+    .container {
+        width: 99% !important;
+    }
+
+    td {
+        font-size: 9px;
+    }
 </style>
+
+<script>
+    function __frt__copyToClipBoard(node) {
+        var emailLink = node;
+        var range = document.createRange();
+        range.selectNode(emailLink);
+        window.getSelection().addRange(range);
+
+        try {
+            // Now that we've selected the anchor text, execute the copy command
+            var successful = document.execCommand('copy');
+            var msg = successful ? 'successful' : 'unsuccessful';
+            //console.log('Copy email command was ' + msg);
+        } catch (err) {
+            console.log('Oops, unable to copy');
+        }
+
+        // Remove the selections - NOTE: Should use
+        // removeRange(range) when it is supported
+        window.getSelection().removeAllRanges();
+
+    }
+    $('div.qa tr td:nth-child(3)').click(
+        function (e) {
+            console.log(this);
+            //console.log(e);
+            __frt__copyToClipBoard(this);
+
+        }
+    );
+</script>
