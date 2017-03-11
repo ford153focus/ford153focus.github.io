@@ -12,6 +12,7 @@ title:  "Quick answers"
             <td>Answer</td>
         </tr>
         </thead>
+        <tbody>
         <tbody class="done">
         <tr>
             <td>done</td>
@@ -547,17 +548,24 @@ title:  "Quick answers"
             <td> query cache</td>
             <td> Здравствуйте. Наши системные администраторы отказались от кэширования запросов на стороне MySQL. Дело в том, что на shared-хостинге кэширование запросов на стороне MySQL не только не давало прироста производительности, но и напротив - вредило ей. Вы можете воспользоваться кэшированием в memcached, если движок вашего сайта позволяет это. Memcached справляется с функциями кэширования существенно лучше.</td>
         </tr>
+        </tbody>
+        <tbody class="nginx">
         <tr>
             <td>nginx</td>
             <td> Push&amp;Pull</td>
             <td> Здравствуйте. <br><br> К сожалению, модуль Push and Pull не установлен на хостинговых серверах по-умолчанию и его установка на shared-хостинге невозможна. <br><br> Если для вас критичен данных модуль, вам придётся мигрировать на VPS или выделенный сервер.</td>
         </tr>
         <tr>
+            <td>nginx</td>
+            <td> cache and compress, google pagespeed recommendations</td>
+            <td> Здравствуйте. Документы, css и js сжимаются и кэшируются по умолчанию. Кэширование настроено на стороне NGINX, отвечающего за отдачу статических файлов. <br><br> Вы можете убедиться в этом самостоятельно. Для этого нужно<br>-открыть сайт в Google Chrome<br>-нажать F12<br>-перейти в раздел Network<br>-перезагрузить страничку<br>-выбрать любой css- или js-файл<br><br> В списке заголовков вас интересуют строки `content-encoding:gzip` (это сжатие) и `expires: %дата%` (это кэширование). http://screenshots.ford315.beget.tech/nginx_cache_and_compress.png <br><br> К сожалению, настройки NGINX не изменяемы, но мы можем перенастроить нужный сайт, чтобы все статические файлы отдавались с помощью сервера Apache. В таком случае вы сможете настроить все параметры с помощью файла `.htaccess`, но это может привести к увеличению времени ответа и повышению нагрузки на аккаунте. <br><br> Настраиваем?</td>
+        </tr>
+        </tbody>
+        <tr>
             <td>opencart</td>
             <td> extensions and ftp</td>
             <td> Здравствуйте. Похожая проблема разбирается на http://oparin.info/web/opencart/oshibka-pri-ustanovke-rasshirenij-opencart-2-0 <br><br> Можете попробывать установить модификатор, указанный в этой статье.</td>
         </tr>
-        </tbody>
         <tbody class="partner">
         <tr>
             <td>partner</td>
@@ -641,11 +649,6 @@ title:  "Quick answers"
             <td> Здравствуйте. К сожалению, на shared-хостинге нет возможности запускать сервера, работающие в daemon-режиме. Это возможно только на выделенных серверах.</td>
         </tr>
         <tr>
-            <td>nginx</td>
-            <td> cache and compress, google pagespeed recommendations</td>
-            <td> Здравствуйте. Документы, css и js сжимаются и кэшируются по умолчанию. Кэширование настроено на стороне NGINX, отвечающего за отдачу статических файлов. <br><br> Вы можете убедиться в этом самостоятельно. Для этого нужно<br>-открыть сайт в Google Chrome<br>-нажать F12<br>-перейти в раздел Network<br>-перезагрузить страничку<br>-выбрать любой css- или js-файл<br><br> В списке заголовков вас интересуют строки `content-encoding:gzip` (это сжатие) и `expires: %дата%` (это кэширование). http://screenshots.ford315.beget.tech/nginx_cache_and_compress.png <br><br> К сожалению, настройки NGINX не изменяемы, но мы можем перенастроить нужный сайт, чтобы все статические файлы отдавались с помощью сервера Apache. В таком случае вы сможете настроить все параметры с помощью файла `.htaccess`, но это может привести к увеличению времени ответа и повышению нагрузки на аккаунте. <br><br> Настраиваем?</td>
-        </tr>
-        <tr>
             <td>sites</td>
             <td>public as DOCUMENT_ROOT</td>
             <td> Здравствуйте. На нашем хостинге это реализуется следующим образом (в скобках команды для SSH):<br><br>Загружаем сайт не внутрь public_html, а кладём рядом<br>Удаляем директорию public_html (rm -rf public_html) <br> Создаём символьную ссылку с именем public_html, указывающую на директорию public (ln -s public public_html)</td>
@@ -670,13 +673,13 @@ title:  "Quick answers"
             <td> wix</td>
             <td> Здравствуйте. К сожалению, перенос сайтов, созданных в конструкторе Wix, на наш хостинг невозможен. Дело в том, что Wix не предоставляет доступа к backend-части сайтов. Единственный выход - создать сайт полностью с нуля на любой популярной cms.</td>
         </tr>
+        </tbody>
+        <tbody class="ssl">
         <tr>
             <td>ssl</td>
             <td> difference between let's encrypt and paid certificate</td>
             <td> Здравствуйте <br><br> Технически бесплатный сертификат от Let's Encrypt ничем не отличается от обычного платного сертификата (без wildcard и extended validation). <br><br> Но некоторые сервисы могут отказаться от работы с бесплатным сертификатом. Из известных примеров - из-за использования SNI, с бесплатными сертификатами отказывается работать Яндекс.Касса.</td>
         </tr>
-        </tbody>
-        <tbody class="ssl">
         <tr>
             <td>ssl</td>
             <td> install my ssl</td>
@@ -754,6 +757,7 @@ title:  "Quick answers"
             <td> Здравствуйте. <br><br> 503ая ошибка связана с множеством запросов к сайтам на вашем аккаунте. Как известно у нас стоит ограничение на 30 одновременных подключений и 31ое получит 503ую ошибку. <br><br> Возможно некоторые из них выполняют долгие операции или просто зависли. <br><br> Посмотреть список соединений можно выполнив команду `ps aux` по SSH. Для завершения всех процессов на аккаунте и возобновления работы сайта можно выполнить команду `ps aux | grep -v bash | awk '{print $2}' | grep -v PID | xargs kill -9`</td>
         </tr>
         </tbody>
+        </tbody>
     </table>
 </div>
 
@@ -801,6 +805,66 @@ title:  "Quick answers"
     .dns tr, .domain tr {
         color: #151515;
         background-color: #9398ff;
+    }
+
+    .fm_ftp tr {
+        background-color: #8F0000;
+        color: #f0f0f0;
+    }
+
+    .free tr {
+        background-color: #A8C801;
+        color: #151515;
+    }
+
+    .htaccess tr {
+        background-color: #BD2047;
+        color: #f0f0f0;
+    }
+
+    .mail tr {
+        background-color: #CC9A00;
+        color: #151515;
+    }
+
+    .moves tr {
+        background-color: #F9921D;
+        color: #151515;
+    }
+
+    .mysql tr {
+        background-color: #5D87A1;
+        color: #151515;
+    }
+
+    .nginx tr {
+        background-color: #039639;
+        color: #f0f0f0;
+    }
+
+    .payments {
+        background-color: #1D744E;
+        color: #151515;
+    }
+
+    .partner tr {
+        background-color: #216CB4;
+        color: #f0f0f0;
+    }
+
+    .sites tr {
+        background-color: #0760B5;
+        color: #f1f5f3;
+    }
+
+    .ssl tr {
+        background-color: #559729;
+        color: #151515;
+    }
+
+    .ok tr {
+        background-color: #90D71C;
+        color: #151515;
     }
 
     .container {
