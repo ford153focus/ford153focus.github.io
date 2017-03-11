@@ -293,8 +293,13 @@ title:  "Quick answers"
         </tr>
         <tr>
             <td>dns</td>
-            <td> ns</td>
-            <td> Здравствуйте <br><br> Вы можете изменить DNS записи на https://cp.beget.com/dns . Ниже надписи "Управление записями DNS" выбирите нужный домен и кликните на надпись "Редактирование DNS-серверов". Если вы переносите домен на другой хостинг, убедитесь, что в списке не осталось наших серверов.</td>
+            <td>ns</td>
+            <td> Здравствуйте <br><br> Вы можете изменить DNS записи на https://cp.beget.com/dns . <br><br> Ниже надписи "Управление записями DNS" выбирите нужный домен и кликните на надпись "Редактирование DNS-серверов". <br><br> Если вы переносите домен на другой хостинг, убедитесь, что в списке не осталось наших серверов.</td>
+        </tr>
+        <tr>
+            <td>dns</td>
+            <td>ns (too new for change)</td>
+            <td> Здравствуйте <br><br> Вы можете изменить DNS записи на https://cp.beget.com/dns . Ниже надписи "Управление записями DNS" выберите нужный домен и кликните на надпись "Редактирование DNS-серверов". <br><br> Так как ваш домен был зарегистрирован совсем недавно, это функция пока недоступна - она становится доступна через 3-6 часов с момента регистрации домена, когда обновляется информация о домене.</td>
         </tr>
         <tr>
             <td>dns</td>
@@ -682,6 +687,13 @@ title:  "Quick answers"
         </tr>
         <tr>
             <td>ssl</td>
+            <td>let's encrypt - send me private key</td>
+            <td> Здравствуйте <br><br> К сожалению, ключи и сертификаты от бесплатного сертификата Let's Encrypt не предоставляются <br><br> Для платных сертификатов они автоматически высылаются на электронную почту.</td>
+        </tr>
+        </tbody>
+        <tbody class="ssl">
+        <tr>
+            <td>ssl</td>
             <td> install my ssl</td>
             <td> Здравствуйте. Для установки SSL сертификата необходимо: <br><br> 1) Зайти в раздел "Домены" в панели управления: https://cp.beget.com/domains <br><br> 2) Кликнуть на иконку "SSL" напротив нужного домена <br><br> 3) Если у Вас уже есть готовый сертификат, то необходимо перейти во вкладку "Установка SSL сертификата". Далее заполнить поля. Все промежуточные сертификаты указываются в поле "Сертификат" после основного сертификата один за другим по порядку. <br><br>Также обращаем ваше внимание, что вы можете заказать бесплатный сертификат, предоставляемый некоммерческой организацией Let's Encrypt. Данный сертификат не требует услуги выделенного IP и распространяется на все поддомены. О том, как его установить, можно прочитать тут: https://beget.ru/news/2016/letsencrypt</td>
         </tr>
@@ -761,142 +773,9 @@ title:  "Quick answers"
     </table>
 </div>
 
-<style>
-    .done tr {
-        color: #151515;
-        background-color: #00aa00;
-    }
-
-    .done_c tr {
-        color: #151515;
-        background-color: #999900;
-    }
-
-    .thx tr {
-        color: #151515;
-        background-color: #00ff00;
-    }
-
-    .fails tr {
-        color: #151515;
-        background-color: red;
-    }
-
-    .ticket_transfer tr {
-        color: #151515;
-        background-color: yellow;
-    }
-
-    .account tr {
-        color: #151515;
-        background-color: #9eb9c7;
-    }
-
-    .backup tr {
-        color: #151515;
-        background-color: #009999;
-    }
-
-    .blocked tr {
-        color: #151515;
-        background-color: red;
-    }
-
-    .dns tr, .domain tr {
-        color: #151515;
-        background-color: #9398ff;
-    }
-
-    .fm_ftp tr {
-        background-color: #8F0000;
-        color: #f0f0f0;
-    }
-
-    .free tr {
-        background-color: #A8C801;
-        color: #151515;
-    }
-
-    .htaccess tr {
-        background-color: #BD2047;
-        color: #f0f0f0;
-    }
-
-    .mail tr {
-        background-color: #CC9A00;
-        color: #151515;
-    }
-
-    .moves tr {
-        background-color: #F9921D;
-        color: #151515;
-    }
-
-    .mysql tr {
-        background-color: #5D87A1;
-        color: #151515;
-    }
-
-    .nginx tr {
-        background-color: #039639;
-        color: #f0f0f0;
-    }
-
-    .payments {
-        background-color: #1D744E;
-        color: #151515;
-    }
-
-    .partner tr {
-        background-color: #216CB4;
-        color: #f0f0f0;
-    }
-
-    .sites tr {
-        background-color: #0760B5;
-        color: #f1f5f3;
-    }
-
-    .ssl tr {
-        background-color: #559729;
-        color: #151515;
-    }
-
-    .ok tr {
-        background-color: #90D71C;
-        color: #151515;
-    }
-
-    .container {
-        width: 99% !important;
-    }
-
-    td {
-        font-size: 9px;
-    }
-</style>
-
+<link rel="stylesheet" href="/css/qa.css" type="text/css" media="screen, projection"/>
+<script src="/js/copy_to_clipboard.js"></script>
 <script>
-    function __frt__copyToClipBoard(node) {
-        var emailLink = node;
-        var range = document.createRange();
-        range.selectNode(emailLink);
-        window.getSelection().addRange(range);
-
-        try {
-            // Now that we've selected the anchor text, execute the copy command
-            var successful = document.execCommand('copy');
-            var msg = successful ? 'successful' : 'unsuccessful';
-            //console.log('Copy email command was ' + msg);
-        } catch (err) {
-            console.log('Oops, unable to copy');
-        }
-
-        // Remove the selections - NOTE: Should use
-        // removeRange(range) when it is supported
-        window.getSelection().removeAllRanges();
-
-    }
     $('div.qa tr td:nth-child(3)').click(
         function (e) {
             console.log(this);

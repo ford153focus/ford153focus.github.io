@@ -1,0 +1,116 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+.done tr {
+  color: #151515;
+  background-color: #00aa00;
+}
+
+.done_c tr {
+  color: #151515;
+  background-color: #999900;
+}
+
+.thx tr {
+  color: #151515;
+  background-color: #00ff00;
+}
+
+.fails tr {
+  color: #151515;
+  background-color: red;
+}
+
+.ticket_transfer tr {
+  color: #151515;
+  background-color: yellow;
+}
+
+.account tr {
+  color: #151515;
+  background-color: #9eb9c7;
+}
+
+.backup tr {
+  color: #151515;
+  background-color: #009999;
+}
+
+.blocked tr {
+  color: #151515;
+  background-color: red;
+}
+
+.dns tr, .domain tr {
+  color: #151515;
+  background-color: #9398ff;
+}
+
+.fm_ftp tr {
+  background-color: #8F0000;
+  color: #f0f0f0;
+}
+
+.free tr {
+  background-color: #A8C801;
+  color: #151515;
+}
+
+.htaccess tr {
+  background-color: #BD2047;
+  color: #f0f0f0;
+}
+
+.mail tr {
+  color: #151515;
+  background-color: rgb(249, 223, 88);
+}
+
+.moves tr {
+  background-color: #F9921D;
+  color: #151515;
+}
+
+.mysql tr {
+  background-color: #5D87A1;
+  color: #151515;
+}
+
+.nginx tr {
+  background-color: #039639;
+  color: #f0f0f0;
+}
+
+.payments {
+  background-color: #1D744E;
+  color: #151515;
+}
+
+.partner tr {
+  background-color: #216CB4;
+  color: #f0f0f0;
+}
+
+.sites tr {
+  background-color: #0760B5;
+  color: #f1f5f3;
+}
+
+.ssl tr {
+  background-color: #559729;
+  color: #151515;
+}
+
+.ok tr {
+  background-color: #90D71C;
+  color: #151515;
+}
+
+.container {
+  width: 99% !important;
+}
+
+td {
+  font-size: 9px;
+}
