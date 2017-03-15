@@ -1,14 +1,6 @@
 ---
 layout: lor-page
-<<<<<<< HEAD
-<<<<<<< HEAD
 title:  "QA (IM)"
-=======
-title:  "Quick answers (for IMs)"
->>>>>>> ae47f23... qa update (im, en)
-=======
-title:  "QA (IM)"
->>>>>>> ba0b379... Update im.html
 ---
 
 <div class="qa">
@@ -137,10 +129,6 @@ title:  "QA (IM)"
             </td>
         </tr>
         <tr>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6fffdc9... Update im.html
             <td>ticket</td>
             <td> redirect to ticket (2)</td>
             <td> Проблему вижу, но сказать причину затрудняюсь - причина не очевидна. Напишите нам из личного
@@ -148,11 +136,6 @@ title:  "QA (IM)"
             </td>
         </tr>
         <tr>
-<<<<<<< HEAD
-=======
->>>>>>> ae47f23... qa update (im, en)
-=======
->>>>>>> 6fffdc9... Update im.html
             <td>50x</td>
             <td> 500</td>
             <td> Здравствуйте. 500ая ошибка связана с ошибкой внутри скриптов вашего сайта. Напишите нам из личного
@@ -164,51 +147,5 @@ title:  "QA (IM)"
     </table>
 </div>
 
-<style>
-    .container {
-        width: 99% !important;
-    }
-
-    td {
-        font-size: 9px;
-    }
-</style>
-
-<script>
-    function __frt__copyToClipBoard(node) {
-        var emailLink = node;
-        var range = document.createRange();
-        range.selectNode(emailLink);
-        window.getSelection().addRange(range);
-
-        try {
-            // Now that we've selected the anchor text, execute the copy command
-            var successful = document.execCommand('copy');
-            var msg = successful ? 'successful' : 'unsuccessful';
-            //console.log('Copy email command was ' + msg);
-        } catch (err) {
-            console.log('Oops, unable to copy');
-        }
-
-        // Remove the selections - NOTE: Should use
-        // removeRange(range) when it is supported
-        window.getSelection().removeAllRanges();
-
-    }
-    $('div.qa tr td:nth-child(3)').click(
-        function (e) {
-            console.log(this);
-            //console.log(e);
-            __frt__copyToClipBoard(this);
-
-        }
-    );
-<<<<<<< HEAD
-<<<<<<< HEAD
-</script>
-=======
-</script>
->>>>>>> ae47f23... qa update (im, en)
-=======
-</script>
->>>>>>> 6fffdc9... Update im.html
+<link href="/css/qa.css">
+<script src="/js/copy_to_clipboard.js"></script>
