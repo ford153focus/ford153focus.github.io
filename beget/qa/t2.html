@@ -1,0 +1,29 @@
+---
+layout: lor-page
+title:  "QA"
+---
+
+<div class="qa">
+    {% for ticket_cat in site.beget.qa.ticket %}
+                <p>{{ ticket_cat }}</p>
+    {% endfor %}
+    <table>
+        <thead>
+        <tr>
+            <td>Segment</td>
+            <td>Question</td>
+            <td>Answer</td>
+        </tr>
+        </thead>
+        <tbody>
+            {% for ticket_cat in site.beget.qa.ticket %}
+                <tbody class="{{ ticket_cat }}">
+                </tbody>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<link rel="stylesheet" type="text/css" media="screen, projection" href="/css/qa.css" />
+<script src="/js/copy_to_clipboard.js"></script>
+<script src="/js/qa.js"></script>

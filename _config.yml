@@ -22,3 +22,6 @@ exclude: [vendor]
 
 sass:
     sass_dir: _sass
+
+collections:
+- beget
