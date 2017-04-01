@@ -4,9 +4,6 @@ title:  "QA"
 ---
 
 <div class="qa">
-    {% for ticket_cat in site.beget.qa.ticket %}
-                <p>{{ ticket_cat }}</p>
-    {% endfor %}
     <table>
         <thead>
         <tr>
@@ -15,12 +12,19 @@ title:  "QA"
             <td>Answer</td>
         </tr>
         </thead>
-        <tbody>
-            {% for ticket_cat in site.beget.qa.ticket %}
-                <tbody class="{{ ticket_cat }}">
-                </tbody>
-            {% endfor %}
-        </tbody>
+        {% directory path: beget/qa/ticket %}
+            <tbody class="{{ file.name }}">
+                    {% assign t_a = site.pages | where_exp: "page", "page.path contains file.name" %}
+                    {% for cupcake in t_a %}
+                        <tr>
+                            <td>{{ file.name }}</td>
+                            <td>{{ cupcake.question }}</td>
+                            <td>{{ cupcake.content }}</td>
+                        </tr>
+                    {% endfor %}
+                    
+            </tbody>
+        {% enddirectory %}
     </table>
 </div>
 
