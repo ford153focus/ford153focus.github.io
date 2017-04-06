@@ -1,0 +1,33 @@
+---
+layout: lor-page
+title:  "QA"
+---
+
+<div class="qa">
+    <table>
+        <thead>
+        <tr>
+            <td>Segment</td>
+            <td>Question</td>
+            <td>Answer</td>
+        </tr>
+        </thead>
+        {% directory path: beget/qa/ticket %}
+            <tbody class="{{ file.name }}">
+                    {% assign t_a = site.pages | where_exp: "page", "page.path contains file.name" %}
+                    {% for cupcake in t_a %}
+                        <tr>
+                            <td>{{ file.name }}</td>
+                            <td>{{ cupcake.question }}</td>
+                            <td>{{ cupcake.content }}</td>
+                        </tr>
+                    {% endfor %}
+                    
+            </tbody>
+        {% enddirectory %}
+    </table>
+</div>
+
+<link rel="stylesheet" type="text/css" media="screen, projection" href="/css/qa.css" />
+<script src="/js/copy_to_clipboard.js"></script>
+<script src="/js/qa.js"></script>
