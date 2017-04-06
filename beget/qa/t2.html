@@ -14,9 +14,9 @@ title:  "QA"
         </thead>
 
         <tbody class="{{ file.name }}">
-        {% assign t_a = site.pages | where_exp: "page", "page.path contains 'beget/qa/ticket/1/'" | sort: 'section' | sort: 'question' %}
+        {% assign t_a = site.pages | where_exp: "page", "page.path contains 'beget/qa/ticket/1/'" | sort: 'question' | sort: 'section' %}
         {% for answer in t_a %}
-        <tr class="{{ answer.section }}">
+        <tr class="{{ answer.css_class }}">
             <td>{{ answer.section }}</td>
             <td>{{ answer.question }}</td>
             <td>{{ answer.content }}</td>
@@ -25,9 +25,9 @@ title:  "QA"
         </tbody>
 
         <tbody class="{{ file.name }}">
-        {% assign t_a = site.pages | where_exp: "page", "page.path contains 'beget/qa/ticket/2/'" | sort: 'section' | sort: 'question' %}
+        {% assign t_a = site.pages | where_exp: "page", "page.path contains 'beget/qa/ticket/2/'" | sort: 'question' | sort: 'section' %}
         {% for answer in t_a %}
-        <tr class="{{ answer.section }}">
+        <tr class="{{ answer.css_class }}">
             <td>{{ answer.section }}</td>
             <td>{{ answer.question }}</td>
             <td>{{ answer.content }}</td>

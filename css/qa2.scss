@@ -106,6 +106,9 @@
   background-color: #90D71C;
   color: #151515;
 }
+.other {
+  background-color: gray;
+}
 
 .container {
   width: 95% !important;
@@ -113,4 +116,5 @@
 
 td {
   font-size: 9px;
+  vertical-align: middle;
 }
