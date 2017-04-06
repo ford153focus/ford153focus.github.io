@@ -12,22 +12,31 @@ title:  "QA"
             <td>Answer</td>
         </tr>
         </thead>
-        {% directory path: beget/qa/ticket %}
-            <tbody class="{{ file.name }}">
-                    {% assign t_a = site.pages | where_exp: "page", "page.path contains file.name" %}
-                    {% for cupcake in t_a %}
-                        <tr>
-                            <td>{{ file.name }}</td>
-                            <td>{{ cupcake.question }}</td>
-                            <td>{{ cupcake.content }}</td>
-                        </tr>
-                    {% endfor %}
-                    
-            </tbody>
-        {% enddirectory %}
+
+        <tbody class="{{ file.name }}">
+        {% assign t_a = site.pages | where_exp: "page", "page.path contains 'beget/qa/ticket/1/'" | sort: 'section' | sort: 'question' %}
+        {% for answer in t_a %}
+        <tr class="{{ answer.section }}">
+            <td>{{ answer.section }}</td>
+            <td>{{ answer.question }}</td>
+            <td>{{ answer.content }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+
+        <tbody class="{{ file.name }}">
+        {% assign t_a = site.pages | where_exp: "page", "page.path contains 'beget/qa/ticket/2/'" | sort: 'section' | sort: 'question' %}
+        {% for answer in t_a %}
+        <tr class="{{ answer.section }}">
+            <td>{{ answer.section }}</td>
+            <td>{{ answer.question }}</td>
+            <td>{{ answer.content }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
     </table>
 </div>
 
-<link rel="stylesheet" type="text/css" media="screen, projection" href="/css/qa.css" />
+<link rel="stylesheet" type="text/css" media="screen, projection" href="/css/qa2.css"/>
 <script src="/js/copy_to_clipboard.js"></script>
 <script src="/js/qa.js"></script>
