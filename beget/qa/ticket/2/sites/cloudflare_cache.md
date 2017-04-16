@@ -1,7 +1,7 @@
 ---
 css_class: sites
 section: sites
-question: cloudflare
+question: cloudflare cache
 ---
 Здравствуйте. Ваш домен делегирован на сервера Cloudflare, который знаимается не только защитой от DDOS-атак, но и выполняет функции кэширующего прокси-сервера.
 

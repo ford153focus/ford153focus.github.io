@@ -1,7 +1,7 @@
 ---
 css_class: ok
 section: we're ok (client-side troubles)
-question: Your site is ok
+question: your site is ok
 ---
 Здравствуйте. Как я могу видеть, на данный момент SITENAME функционирует нормально. Уточните, актуальна ли проблема в данный момент?
 

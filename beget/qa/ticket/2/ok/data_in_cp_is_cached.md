@@ -1,7 +1,7 @@
 ---
 css_class: ok
 section: we're ok (client-side troubles)
-question: Data in CP is cached
+question: data in CP is cached
 ---
 Здравствуйте.
 
