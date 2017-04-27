@@ -7,6 +7,6 @@ question: sftp
 
 Для начала на главной страничке нужно включить "SSH-доступ"
 
- - Настройка FileZilla описана на https://beget.com/ru/articles/filezilla_ftp , только протокол нужно изменить на SFTP, а порт на 22
- - Инструкцию по настройке WinSCP можно найти на https://beget.com/ru/articles/winscp
- - Если вы используете Total Commander - вам понадобится установить плагин SFTP с http://www.ghisler.com/plugins.htm
+<br>&nbsp;- Настройка FileZilla описана на https://beget.com/ru/articles/filezilla_ftp , только протокол нужно изменить на SFTP, а порт на 22
+<br>&nbsp;- Инструкцию по настройке WinSCP можно найти на https://beget.com/ru/articles/winscp
+<br>&nbsp;- Если вы используете Total Commander - вам понадобится установить плагин SFTP с http://www.ghisler.com/plugins.htm

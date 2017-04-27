@@ -11,4 +11,6 @@ question: there is no green lock on my site
 
 В случае wordpress вы можете попробовать установить плагин, который должен решить данную проблему - https://wordpress.org/plugins/ssl-insecure-content-fixer/ . Либо же воспользоваться инструкцией на https://managewp.com/wordpress-ssl-settings-and-how-to-resolve-mixed-content-warnings (Option 1).
 
-В случае OpenCart вам следует проверить файлы &#96;config.php&#96; и &#96;admin/config.php&#96;: константы &#96;HTTPS_SERVER&#96; и &#96;HTTPS_CATALOG&#96; должны начинаться на &#96;https://&#96;
+В случае OpenCart вам следует проверить файлы &#96;config.php&#96; и &#96;admin/config.php&#96;: значение констант &#96;HTTPS_SERVER&#96; и &#96;HTTPS_CATALOG&#96; должны начинаться на &#96;https://&#96;
+
+В случае Drupal7 вам нужно отредактировать файл sites/default/settings.php (переменная $base_url) и сбросить кэш (&#96;`drush cc all`&#96; для Drupal7 и &#96;`drush cache-rebuild`&#96; для Drupal8)

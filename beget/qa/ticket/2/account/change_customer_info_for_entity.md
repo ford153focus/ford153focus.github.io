@@ -1,7 +1,7 @@
 ---
 css_class: account
 section: account
-question: change customer info (u)
+question: change customer info for entity
 ---
 Здравствуйте.
 
