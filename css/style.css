@@ -1,0 +1,217 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title {
+  font-family: "Ford Antenna", Arial, sans-serif;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 18px;
+}
+a {
+  color: #eee;
+  cursor: pointer;
+  text-decoration: none;
+}
+div.hr {
+  height: 32px;
+}
+table {
+  width: 100%;
+}
+table thead {
+  background-color: #555753;
+}
+table th,
+table td {
+  border: 1px solid #555753;
+  padding: 5px;
+}
+table th {
+  width: 25%;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #2e3436;
+  color: #eee;
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+body .container {
+  padding: 10px 20px;
+  background-color: #272c2d;
+}
+body .header {
+  /*BreadCrums*/
+  /**/
+}
+body .header .container {
+  border-radius: 0 0 10px 10px;
+  position: relative;
+}
+body .header .site_title {
+  font-family: "Ford Script", cursive;
+  font-size: 44px;
+  float: left;
+}
+body .header .site_title a:hover,
+body .header .site_title a:visited,
+body .header .site_title a:focus {
+  color: #eee;
+  text-decoration: none;
+}
+body .header .site_desc {
+  float: right;
+  margin-top: 20px;
+}
+body .header .B_crumbBox {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body .header .B_crumbBox li {
+  display: inline;
+}
+body .header .B_crumbBox li a {
+  color: #e9b96e;
+  font-size: 15px;
+}
+body .title .container {
+  border-radius: 10px;
+}
+body .title .container h1 {
+  text-align: center;
+  margin: 0;
+}
+body .content {
+  /*TAGS'n'SOURCES*/
+  /**/
+  /*blocks for code fragments*/
+  /**/
+  /**/
+  /**/
+}
+body .content .container {
+  border-radius: 10px;
+}
+body .content .tags a {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 3px 5px;
+  margin: 0 3px;
+}
+body .content .sources a {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 3px 5px;
+  margin: 0 3px;
+}
+body .content .tags,
+body .content .sources {
+  margin: 0;
+}
+body .content .console {
+  font-family: 'Terminus', monospace;
+  font-size: 21px;
+  background: #222;
+  margin-left: 32px;
+  margin-bottom: 5px;
+  overflow: auto;
+}
+body .content .console .comment {
+  color: #099;
+  font-family: monospace;
+  font-style: italic;
+  font-size: 11px;
+}
+body .content .article_list ul {
+  list-style-type: katakana;
+  padding-left: 30px;
+}
+body .content .article_list ul a {
+  font-size: 12pt;
+}
+body .footer_reserved_place {
+  height: 83px;
+}
+body .footer {
+  bottom: 0;
+  height: 83px;
+  position: absolute;
+  width: 100%;
+}
+body .footer .container {
+  border-radius: 10px 10px 0 0;
+}
+body .footer .author {
+  float: left;
+  font-size: 40px;
+}
+body .footer .author .team {
+  font-family: "Sega", Arial, serif;
+  font-size: 30px;
+}
+body .footer .author .member {
+  font-family: "Ford Script", cursive;
+}
+body .footer .badges {
+  float: right;
+  padding-top: 10px;
+}
+body .footer .badges img {
+  height: 32px !important;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  margin-left: 15px;
+  padding: 5px;
+}
+/*portfolio page*/
+.current_109 .sites td,
+.current_109 .sites th {
+  width: 33%;
+}
+.current_109 .tools td,
+.current_109 .tools th {
+  width: 25%;
+}
+.current_109 .tools td:nth-child(4),
+.current_109 .tools th:nth-child(4) {
+  min-width: 848px;
+}
+/**/
+/* MAIN PAGE */
+.cat_list a {
+  background-color: rgba(111, 111, 111, 0.5);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  color: #eee;
+  display: inline-block;
+  font-family: 'Marck Script', sans-serif;
+  font-size: 22px;
+  height: 150px;
+  margin-left: 15px;
+  text-align: right;
+  width: 150px;
+}
+.cat_list .blog {
+  background-image: url('/img/blog.png');
+  background-size: 74% auto;
+}
+.cat_list .portfolio {
+  background-image: url('/img/portfolio.png');
+  background-size: 90% auto;
+}
+/**/

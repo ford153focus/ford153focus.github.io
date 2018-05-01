@@ -1,0 +1,253 @@
+@page-size: 80%;
+@footer-size: 83px;
+@block-padding: 10px 20px;
+@block-border-radius: 10px;
+
+h1, h2, h3, h4, h5, h6, .title {
+	font-family: "Ford Antenna", Arial, sans-serif;
+}
+
+h1 {
+	font-size: 36px
+}
+
+h2 {
+	font-size: 24px
+}
+
+h3 {
+	font-size: 18px
+}
+
+a {
+	color: #eee;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+div.hr {
+	height: 32px;
+}
+
+table {
+	width: 100%;
+
+	thead {
+		background-color: rgb(85, 87, 83);
+	}
+
+	th, td {
+		border: 1px solid rgb(85, 87, 83);
+		padding: 5px;
+	}
+	th {
+		width : 25%;
+	}
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #2e3436;
+	color: #eee;
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+
+	.container {
+		padding: @block-padding;
+		background-color: #272c2d;
+	}
+
+	.header {
+		.container {
+			border-radius: 0 0 @block-border-radius @block-border-radius;
+			position: relative;
+		}
+		.site_title {
+			font-family: "Ford Script", cursive;
+			font-size: 44px;
+			float: left;
+			a:hover, a:visited, a:focus {
+				color: #eee;
+				text-decoration: none;
+			}
+		}
+
+		.site_desc {
+			//margin: -8px 0;
+			float: right;
+			margin-top: 20px;
+		}
+
+		/*BreadCrums*/
+		.B_crumbBox {
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			li {
+				display: inline;
+				a {
+					color: #e9b96e;
+					font-size: 15px;
+				}
+			}
+		}
+		/**/
+	}
+
+	.title {
+		.container {
+			border-radius: @block-border-radius;
+			h1 {
+				text-align: center;
+				margin: 0;
+			}
+		}
+	}
+
+	.content {
+		.container {
+			border-radius: @block-border-radius;
+		}
+
+		/*TAGS'n'SOURCES*/
+		.tags a {
+			background-color: rgba(255, 255, 255, 0.2);
+			border-radius: 8px;
+			padding: 3px 5px;
+			margin: 0 3px;
+		}
+
+		.sources a {
+			background-color: rgba(255, 255, 255, 0.2);
+			border-radius: 8px;
+			padding: 3px 5px;
+			margin: 0 3px;
+		}
+
+		.tags, .sources {
+			margin: 0;
+		}
+		/**/
+		/*blocks for code fragments*/
+		.console {
+			font-family: 'Terminus', monospace;
+			font-size: 21px;
+			background: #222;
+			margin-left: 32px;
+			margin-bottom: 5px;
+			overflow: auto;
+
+			.comment {
+				color: #099;
+				font-family: monospace;
+				font-style: italic;
+				font-size: 11px;
+			}
+		}
+		/**/
+		/**/
+		.article_list ul {
+			list-style-type: katakana;
+			padding-left: 30px;
+			a {
+				font-size: 12pt;
+			}
+		}
+		/**/
+	}
+
+	.footer_reserved_place {
+		height: @footer-size;
+	}
+
+	.footer {
+		bottom: 0;
+		height: @footer-size;
+		position: absolute;
+		width: 100%;
+		.container {
+			border-radius: @block-border-radius @block-border-radius 0 0;
+		}
+		.author {
+			float: left;
+			font-size: 40px;
+			//padding-top: 10px;
+
+			.team {
+				font-family: "Sega", Arial, serif;
+				font-size: 30px;
+			}
+
+			.member {
+				font-family: "Ford Script", cursive
+			}
+		}
+
+		.badges {
+			float: right;
+			padding-top: 10px;
+			img {
+				height: 32px !important;
+				background-color: rgba(255, 255, 255, 0.2);
+				border-radius: 8px;
+				margin-left: 15px;
+				padding: 5px;
+			}
+		}
+
+	}
+}
+
+/*portfolio page*/
+.current_109 {
+	.sites {
+		td, th {
+			width: 33%;
+		}
+	}
+	.tools {
+		td, th {
+			width: 25%;
+			&:nth-child(4) {
+				min-width: 848px;
+			}
+		}
+	}
+}
+
+/**/
+
+/* MAIN PAGE */
+.cat_list {
+	a {
+		background-color: rgba(111, 111, 111, 0.5);
+		background-position: left bottom;
+		background-repeat: no-repeat;
+		border-radius: 5px;
+		color: #eee;
+		display: inline-block;
+		font-family: 'Marck Script', sans-serif;
+		font-size: 22px;
+		height: 150px;
+		margin-left: 15px;
+		text-align: right;
+		width: 150px;
+	}
+
+	.blog {
+		background-image: url('/img/blog.png');
+		background-size: 74% auto;
+	}
+
+	.portfolio {
+		background-image: url('/img/portfolio.png');
+		background-size: 90% auto;
+	}
+}
+/**/

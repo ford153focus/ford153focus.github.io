@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Terminus";
+    src: url("/fonts/Terminus.ttf");
+}
+
+@font-face {
+    font-family: "Ford Script";
+    src: url("/fonts/fordscript.ttf");
+}
+
+@font-face {
+    font-family: "Ford Antenna";
+    src: url("/fonts/fordantennawglregular.woff");
+}
+
+@font-face {
+    font-family: "Sega";
+    src: url("/fonts/sega.ttf");
+}
