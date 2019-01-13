@@ -1,14 +1,95 @@
 ---
 layout: lor-page
-title:  "Portfolio"
+title: Portfolio
 ---
+
+{::options parse_block_html="true" /}
 
 ## Сертификаты
 
-- [Язык программирование PHP](./ru.intuit.php.jpeg) (_обучение не проходил, просто влетел и сдал экзамен экстерном_)
-- [1С-Битрикс: Контент-менеджер](./ru.1c-bitrix.content-manager.pdf) (_раньше (а может быть и сейчас) нельзя было прийти и сдать экзамен сразу на программиста, только км->админ->программист. Меня хватило только на км, решил не тратить время._)
-- [Ruby on Rails - junior level](https://certification.mail.ru/certificates/c5d658d6-ecae-4fdb-841c-a7ea6e9f9c32/)
-- [Экспресс-погружение в разработку приложений на JavaScript](./com.microsoft.mva.js-express-dive)
+<ul class="certificates">
+    <li class="certificate">
+        <a href="./ru.intuit.php.jpeg">
+            <div class="icon">
+                <img src="/img/logos/php_logo_colour.svg">
+            </div>
+            <div class="description">
+                Язык программирования<br/>PHP
+            </div>
+        </a>
+    </li>
+    <li class="certificate">
+        <a href="./ru.1c-bitrix.content-manager.pdf">
+            <div class="icon">
+                <img src="/img/logos/1c_bitrix_logo.svg">
+            </div>
+            <div class="description">
+                1С-Битрикс:<br/>Контент-менеджер
+            </div>
+        </a>
+    </li>
+    <li class="certificate">
+        <a href="https://certification.mail.ru/certificates/c5d658d6-ecae-4fdb-841c-a7ea6e9f9c32/">
+            <div class="icon">
+                <img src="/img/logos/ruby_on_rails_logo.svg">
+            </div>
+            <div class="description">
+                Ruby on Rails<br/><i>(junior level)</i>
+            </div>
+        </a>
+    </li>
+    <li class="certificate">
+        <a href="./com.microsoft.mva.js-express-dive.pdf">
+            <div class="icon">
+                <img src="/img/logos/nodejs_logo.svg">
+            </div>
+            <div class="description">
+                Экспресс-погружение в разработку приложений на JavaScript
+            </div>
+        </a>
+    </li>
+</ul>
+
+## Участие в проектах
+
+<div class="involved_in">
+
+URL | CMS | Title
+--- | --- | ---
+[http://lsr.ru](http://lsr.ru)                                     | ![](/img/icons/bitrix.ico) 1C-Bitrix | Сайт застройщика «ЛСР»
+[http://5stolic.vrndk.ru](http://5stolic.vrndk.ru)                 | ![](/img/icons/bitrix.ico) 1C-Bitrix | Сайт застройщика «Воронежская Девелоперская Компания», ЖК «Пять столиц»
+[http://6543210.ru](http://6543210.ru)                             | ![](/img/icons/bitrix.ico) 1C-Bitrix | Сайт застройщика «Ленстройтрест»
+[http://himkisamolet.ru](http://himkisamolet.ru)                   | ![](/img/icons/bitrix.ico) 1C-Bitrix | Сайт застройщика «Самолет Девелопмент», ЖК «Химки 2019»
+[http://kurortkvartal.ru](http://kurortkvartal.ru)                 | ![](/img/icons/bitrix.ico) 1C-Bitrix | Сайт застройщика «СПб Реновация», ЖК «Живи! В Курортном»
+[http://livekvartal.ru](http://livekvartal.ru)                     | ![](/img/icons/bitrix.ico) 1C-Bitrix | Сайт застройщика «СПб Реновация», ЖК «Живи!»
+[http://lubercysamolet.ru](http://lubercysamolet.ru)               | ![](/img/icons/bitrix.ico) 1C-Bitrix | Сайт застройщика «Самолет Девелопмент», ЖК «Люберцы 2017»
+[http://nekrasovka-samolet.ru](http://nekrasovka-samolet.ru)       | ![](/img/icons/bitrix.ico) 1C-Bitrix | Сайт застройщика «Самолет Девелопмент», Квартал «Некрасовка»
+[http://ostafievosamolet.ru](http://ostafievosamolet.ru)           | ![](/img/icons/bitrix.ico) 1C-Bitrix | Сайт застройщика «Самолет Девелопмент», ЖК «Остафьево»
+[http://prigorod77.ru](http://prigorod77.ru)                       | ![](/img/icons/bitrix.ico) 1C-Bitrix | Сайт застройщика «Самолет Девелопмент», «Пригород Лесное»
+[http://rbi.ru](http://rbi.ru)                                     | ![](/img/icons/bitrix.ico) 1C-Bitrix | Сайт застройщика «RBI»
+[http://sevgorod.ru](http://sevgorod.ru)                           | ![](/img/icons/bitrix.ico) 1C-Bitrix | Сайт застройщика «Северный город»
+[http://smdevelopment.ru](http://smdevelopment.ru)                 | ![](/img/icons/bitrix.ico) 1C-Bitrix | Сайт застройщика «Силовые машины Девелопмент»
+[http://sputnikcity.ru](http://sputnikcity.ru)                     | ![](/img/icons/bitrix.ico) 1C-Bitrix | Сайт застройщика «Самолет Девелопмент», Квартал «Спутник»
+[http://tomilinosamolet.ru](http://tomilinosamolet.ru)             | ![](/img/icons/bitrix.ico) 1C-Bitrix | Сайт застройщика «Самолет Девелопмент», ЖК «Томилино 2018»
+[http://vnukovosamolet.ru](http://vnukovosamolet.ru)               | ![](/img/icons/bitrix.ico) 1C-Bitrix | Сайт застройщика «Самолет Девелопмент», ЖК «Внуково 2017»
+[http://www.putilkovo-samolet.ru](http://www.putilkovo-samolet.ru) | ![](/img/icons/bitrix.ico) 1C-Bitrix | Сайт застройщика «Самолет Девелопмент», ЖК «Большое Путилково»
+[http://dareco.ru](http://dareco.ru)                               | ![](/img/icons/umi.ico)    UMI       | Сайт производственной фирмы "ДАР"
+[http://dymohodvulkan.ru](http://dymohodvulkan.ru)                 | ![](/img/icons/umi.ico)    UMI       | Сайт завода дымоходов «Вулкан»
+[http://fittorg.ru](http://fittorg.ru)                             | ![](/img/icons/bitrix.ico) 1C-Bitrix | Интернет-магазин тренажёров и спортивных товаров
+[http://i-kamin.ru](http://i-kamin.ru)                             | ![](/img/icons/umi.ico)    UMI       | Интернет-магазин компании «Центр Каминов»
+[http://kamin.ru](http://kamin.ru)                                 | ![](/img/icons/umi.ico)    UMI       | Интернет-магазин компании «Домотехника»
+[http://keli.ru](http://keli.ru)                                   | ![](/img/icons/umi.ico)    UMI       | Сайт официального представительства завода «Keli Sensing Technology»
+[http://kotly-ctc.ru](http://kotly-ctc.ru)                         | ![](/img/icons/netcat.ico) NetCat    | Интернет-магазин «Котлы. Всё для отопления»
+[http://liplip.club](http://liplip.club)                           | ![](/img/icons/umi.ico)    UMI       | Интернет-магазин «Веселые липучки»
+[http://newsluh.ru](http://newsluh.ru)                             | ![](/img/icons/umi.ico)    UMI       | Сайт компании «Новая волна»
+[http://nordkraft.ru](http://nordkraft.ru)                         | ![](/img/icons/umi.ico)    UMI       | Сайт компании «Норд Крафт»
+[http://nrcerm.ru](http://nrcerm.ru)                               | ![](/img/icons/umi.ico)    UMI       | Сайт ФГБУ МЧС России
+[http://pechspb.ru](http://pechspb.ru)                             | ![](/img/icons/umi.ico)    UMI       | Интернет-магазин компании «Печи Горбунова»
+[http://pnevmo.com](http://pnevmo.com)                             | ![](/img/icons/bitrix.ico) 1C-Bitrix | Интернет-магазин компании «Пневмо-Альянс»
+[http://teddymarket.ru](http://teddymarket.ru)                     | ![](/img/icons/umi.ico)    UMI       | Интернет-магазин детских товаров "ТеддиМаркет"
+[http://wybor-battery.com](http://wybor-battery.com)               | ![](/img/icons/umi.ico)    UMI       | Интернет-магазин компании «Выбор»
+
+</div>
 
 ## Личные проекты
 
@@ -19,31 +100,12 @@ title:  "Portfolio"
 [popingui](https://github.com/ford153focus/popingui) | Многопоточный ping множества таргетов с отображением результата в ncurses-табличке
 [html5terminal](https://github.com/ford153focus/html5terminal) | Примитивный эмулятор терминала построенный вокруг `passthru()`
 
-
-_в ближайшем будущем закончу, причешу и выложу прочие проекты. наверное..._
-
-### Мелкие правки
-
-URL | CMS | Что сделано | Заметка
---- | --- | --- | ---
-dymohodvulkan.ru  | UMI       | Правка вёрстки, защита форм обратной связи
-fittorg.ru        | 1C-Bitrix | Правка заголовков, учим карусель банеров отображать видео, автоматическая регенерация sitemap'а | По-умолчанию preload в &lt;video&gt; работает не очень, Bitrix не умеет генерировать sitemap по CRON'у
-i-kamin.ru        | UMI       | Правка каталога
-kamin.ru          | UMI       | Интеграция calltracking, правка каталога
-keli.ru           | UMI       | Плавная прокрутка на странице контактов с шагом в один экран | windows.scrollBy умеет в плавную прокрутку, но только в Chrome. jQuery/animate всё еще является простейшим путём.
-kotly-ctc.ru      | NetCat    | Правка вёрстки, смена содержимого в шапке сайта. | Типичная правка контента по просьбе SEO
-liplip.club       | UMI       | Правка заголовков
-pechspb.ru        | UMI       | Правка каталога
-pnevmo.com        | 1C-Bitrix | Настройка заголовков, фильтра товаров, calltouch, целей (yandex.metrika)
-wybor-battery.com | UMI       | Настройка импорта - пишем скрипт, который собирает информацию из трёх источников, формирует корректный CSV для импорта, выкачивает и размещает нужные файлы в нужном месте
-
 ## Тестовые задания
 
 URL | Описание
 --- | ---
-https://github.com/ford153focus/vpa-tt | Пишем CRUD на Laravel без единой строчки на PHP
-https://github.com/ford153focus/simple-shortcode-generator | Простенький укорачиватель ссылок. В условии было поставлено условие не использовать фрэймворки. Хз зачем, наверное хотели взять джуна архитектором.
+https://github.com/ford153focus/simple-shortcode-generator | Простенький укорачиватель ссылок без использования фрэймворков.
 
 <hr>
 
-Список сильно неполный и никак не охватывает первые полтора года работы, однако на тот момент мне как-то не приходило в голову записывать все достижения :(
+Список сильно неполный и не охватывает некоторые периоды работы, некоторые проекты и некоторые задачи

@@ -21,6 +21,12 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+a:hover {
+  color: #eee;
+}
+a:visited {
+  color: #eee;
+}
 div.hr {
   height: 32px;
 }
@@ -215,3 +221,49 @@ body .footer .badges img {
   background-size: 90% auto;
 }
 /**/
+.certificates {
+  padding: 0;
+  margin: 0;
+}
+.certificates li {
+  border-radius: 5mm;
+  border: 2px solid #555753;
+  display: inline-block;
+  height: 6cm;
+  margin: 0 1mm 3mm 0;
+  vertical-align: top;
+  width: 5cm;
+}
+.certificates li a {
+  display: block;
+}
+.certificates li a div {
+  padding: 3mm;
+}
+.certificates li a div.icon {
+  align-items: center;
+  display: flex;
+  height: 4cm;
+  justify-content: center;
+}
+.certificates li a div.icon img {
+  height: auto;
+  max-height: 100%;
+  width: auto;
+  max-width: 100%;
+}
+.certificates li a div.description {
+  background-color: #555753;
+  border-radius: 0 0 5mm 5mm;
+  height: 2cm;
+  text-align: center;
+}
+.involved_in table td:nth-of-type(1),
+.involved_in table th:nth-of-type(1) {
+  width: 10%;
+}
+.involved_in table td:nth-of-type(2),
+.involved_in table th:nth-of-type(2) {
+  width: 5%;
+}
+/*# sourceMappingURL=style.css.map */
