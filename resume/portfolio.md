@@ -96,16 +96,17 @@ URL | CMS | Title
 Название | Описание
 --- | ---
 [apt-beget](https://github.com/ford153focus/apt-beget) | Собрание скриптов для установки софта на shared-хостинге BeGet с поправкой на особенности хостера
-[csgo_upd_rss](https://github.com/ford153focus/csgo_upd_rss) | Простенький crawler на C# - парсим страничку и генерим Atom RSS XML
+[csgo_upd_rss](https://github.com/ford153focus/csgo_upd_rss) | Простой crawler на C# - парсим страничку и генерим Atom RSS XML
 [html5terminal](https://github.com/ford153focus/html5terminal) | Примитивный эмулятор терминала построенный вокруг `passthru()`
 [popingui](https://github.com/ford153focus/popingui) | Многопоточный ping множества таргетов с отображением результата в ncurses-табличке
-[topographer](https://github.com/ford153focus/topographer) | Простой составитель sitemap
+[topographer](https://github.com/ford153focus/topographer) | Простой генератор sitemap на C#
+[wiki.beget.tech](https://github.com/ford153focus/wiki.beget.tech) | Справочный сайт, написанный с помощью Jekyll
 
 ## Тестовые задания
 
 URL | Описание
 --- | ---
-https://github.com/ford153focus/simple-shortcode-generator | Простенький укорачиватель ссылок без использования фрэймворков.
+https://github.com/ford153focus/simple-shortcode-generator | Простой укорачиватель ссылок, написанный без использования фрэймворков.
 
 <hr>
 
