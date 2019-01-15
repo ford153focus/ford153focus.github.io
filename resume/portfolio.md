@@ -9,7 +9,7 @@ title: Portfolio
 
 <ul class="certificates">
     <li class="certificate">
-        <a href="./ru.intuit.php.jpeg">
+        <a href="./certificates/ru.intuit.php.jpeg">
             <div class="icon">
                 <img src="/img/logos/php_logo_colour.svg">
             </div>
@@ -19,7 +19,7 @@ title: Portfolio
         </a>
     </li>
     <li class="certificate">
-        <a href="./ru.1c-bitrix.content-manager.pdf">
+        <a href="./certificates/ru.1c-bitrix.content-manager.pdf">
             <div class="icon">
                 <img src="/img/logos/1c_bitrix_logo.svg">
             </div>
@@ -39,7 +39,7 @@ title: Portfolio
         </a>
     </li>
     <li class="certificate">
-        <a href="./com.microsoft.mva.js-express-dive.pdf">
+        <a href="./certificates/com.microsoft.mva.js-express-dive.pdf">
             <div class="icon">
                 <img src="/img/logos/nodejs_logo.svg">
             </div>
