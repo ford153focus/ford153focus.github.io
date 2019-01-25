@@ -13,13 +13,13 @@ Brand Name | self-made assembly
 MotherBoard | ASUS Sabertooth R2.0 | AMD 990FX, Socket AM3+
 CPU | AMD FX8320e | Oc, 4400 MHz
 Cooling | Zalman CNPS10X Performa | tower type, 120mm | Default cooler is bit noisy
-RAM | DDR3 16Gb | 2x8gb, DDR1600
+RAM | Kingston ValueRAM | DDR3, 2x8gb, DDR1600
 SSD | OCZ Vertex 460 | 120Gb, SSD, SATA 3.1, OCZ Barefoot 3 M10, Toshiba Toggle DDR 2.0
 SSD | Intel 530 | 180Gb
 SSD | Crucial M500 | 240Gb
-HDD | Samsung Spin Point F2 EcoGreen (HD103SI) | 1Tb, 5400RPM | Veteran. Low RPM not means low performance
+HDD | Samsung Spin Point F2 EcoGreen (HD103SI) | 1Tb, 5400RPM | Low RPM not means low performance
 HDD | Western Digital RE4 (WDC WD4000FYYZ-01UL1B0) | 4Tb, 7200RPM, SATA 3.0 | Enterprise storage device
-Videocard | MSI/AMD Radeon HD7850 | 1024 cores, 256bit, 2048Mb | Aka R9 370. Good performance for good price
+Videocard | MSI/AMD Radeon HD7850 | 1024 cores, 256bit, 2048Mb | Aka R9 370.
 Display | Rubin RB-50D9F2TC | 50" TV
 Soundcard | ESI MAYA 44 USB
 Headphones | Creative HQ1600
@@ -28,7 +28,7 @@ Keyboard | Rapoo E9050 | Compact tenkeyless wireless keyboard
 Mouse | A4Tech R4
 Case | Exegate 4139L | 4U server case
 Power Supply | FSP Epsilon 80+ | 900W
-OS | GNU/Linux Kubuntu 16.04 | ppa:mainline-kernel, ppa:oibaf-ppa, kde neon
+OS | GNU/Linux KDE Neon 18.04
 
 ## Any part/device that was used and tested
 
@@ -42,11 +42,12 @@ Cooling | Tt Contact 30 | tower type, 120mm
 Cooling | Zalman CNPS10X Performa | tower type, 120mm | Default cooler is bit noisy
 CPU | AMD Athlon-64 X2 6000+ | Socket AM2
 CPU | AMD FX8320 | 4600MHz(oc), Socket AM3
-CPU | AMD FX8320e | 4900MHz(oc), Socket AM3 | Need 1.43V for 4900MHz. Usually using at 4400MHz with 1.375V.
+CPU | AMD FX8320e | 4600MHz(oc), Socket AM3 | Can take 4900MHz on 1.43V. Usually using at 4600MHz with 1.375V.
 CPU | AMD Phenom 2 X4 955 | 4100MHz(oc), Socket AM3 | Seems like degradated after years at 1.5V, downclocked to 3800MHz without overvoltage
 CPU | IBM Cyrix-M | 233MHz, Socket7 | -
 CPU | Intel Celeron | 2400MHz, Northwood, Socket 478
 CPU | Intel Celeron | 2700MHz, Northwood, Socket 478
+CPU | Intel Core i3-3225
 CPU | Intel Core i3-4170
 CPU | Intel Core i3-4340 | 3600MHz
 CPU | Intel Core i3-540 | oc 4600MHz | But even with 4600MHz weaker then AMD Phenom2 X4 965 with 4100MHz
@@ -58,7 +59,7 @@ CPU | Intel Pentium 4 631 | 3000MHz, Socket 775, Conroe
 CPU | Intel Pentium D 840 | 3200MHz | Lower than stock E4500 at 2.2 GHz
 CPU | Intel Pentium Dual-Core E5200
 CPU | Intel Pentium E5200 | 2940MHz(oc), Socket 775
-CPU | Intel Xeon X3450 | 3800MHz(oc)
+CPU | Intel Xeon X3450 | 3520MHz(oc)
 Display | Acer H236HL
 Display | Rubin RB-50D9F2TC | 50" TV
 Display | Samsung UE32EH4000WXRU | 32" TV
@@ -128,7 +129,8 @@ Motherboard | ASUS P5KPL-AM SE | Socket 775, Intel G31 | Cheapest mb in those ti
 Motherboard | ASUS P5Q Pro | Socket 775, Intel P45
 Motherboard | ASUS Sabertooth 990FX R2.0 | Socket AM3+, AMD990
 Motherboard | Gigabyte 8IPE1000-G | Socket 478, Intel i865 | out of order
-Motherboard | Gigabyte GA-970A-D3 | Socket AM3+, AMD970 | Dead
+Motherboard | Gigabyte GA-970A-D3 | Socket AM3+, AMD970 | out of order
+Motherboard | Gigabyte GA-PH67A-D3-B3 | Socket 1155, Intel H67
 Motherboard | Zida TX98 | Socket 7 | -
 Mouse | A4Tech Bloody V7 | - | -
 Mouse | A4Tech R4 | - | Awesome, wireless mouse really can be gaming mouse. Rechargeable battery is required.
