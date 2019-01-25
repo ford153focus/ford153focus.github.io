@@ -1,0 +1,18 @@
+/**
+ * blocks for code fragments
+ */
+.console {
+    font-family: 'Terminus', monospace;
+    font-size: 21px;
+    background: #222;
+    margin-left: 32px;
+    margin-bottom: 5px;
+    overflow: auto;
+
+    .comment {
+        color: #099;
+        font-family: monospace;
+        font-style: italic;
+        font-size: 11px;
+    }
+}

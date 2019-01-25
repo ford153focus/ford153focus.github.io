@@ -19,3 +19,6 @@ github_username:  ford153focus
 markdown: kramdown
 
 exclude: [vendor]
+
+sass:
+  sass_dir: _sass

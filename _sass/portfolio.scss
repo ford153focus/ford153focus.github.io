@@ -1,0 +1,52 @@
+.certificates {
+	padding: 0;
+	margin: 0;
+	li {
+		border-radius: 5mm;
+		border: 2px solid #555753;
+		display: inline-block;
+		height: 6cm;
+		margin: 0 1mm 3mm 0;
+		vertical-align:top;
+		width: 5cm;
+		a {
+			display: block;
+			div {
+				padding: 3mm;
+				&.icon {
+					align-items: center;
+					display: flex;
+					height: 4cm;
+					justify-content: center;
+					img {
+						height: auto;
+						max-height: 100%;
+	
+						width: auto;
+						max-width: 100%;
+					}
+				}
+				&.description {
+					background-color: #555753;
+					border-radius: 0 0 5mm 5mm;
+					height: 2cm;
+					text-align: center;
+				}
+			}
+			
+		}
+	}
+}
+
+.involved_in {
+	table {
+		td:nth-of-type(1), 
+		th:nth-of-type(1) {
+			width: 10%;
+		}
+		td:nth-of-type(2), 
+		th:nth-of-type(2) {
+			width: 5%;
+		}
+	}
+}

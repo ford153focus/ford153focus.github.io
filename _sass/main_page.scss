@@ -1,0 +1,29 @@
+/*
+ * MAIN PAGE
+ */
+.cat_list {
+	a {
+		background-color: rgba(111, 111, 111, 0.5);
+		background-position: left bottom;
+		background-repeat: no-repeat;
+		border-radius: 5px;
+		color: #eee;
+		display: inline-block;
+		font-family: 'Marck Script', sans-serif;
+		font-size: 22px;
+		height: 150px;
+		margin-left: 15px;
+		text-align: right;
+		width: 150px;
+	}
+
+	.blog {
+		background-image: url('/img/blog.png');
+		background-size: 74% auto;
+	}
+
+	.portfolio {
+		background-image: url('/img/portfolio.png');
+		background-size: 90% auto;
+	}
+}
