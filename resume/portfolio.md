@@ -9,7 +9,7 @@ title: Portfolio
 
 <ul class="certificates">
     <li class="certificate">
-        <a href="./ru.intuit.php.jpeg">
+        <a href="./certificates/ru.intuit.php.jpeg">
             <div class="icon">
                 <img src="/img/logos/php_logo_colour.svg">
             </div>
@@ -19,7 +19,7 @@ title: Portfolio
         </a>
     </li>
     <li class="certificate">
-        <a href="./ru.1c-bitrix.content-manager.pdf">
+        <a href="./certificates/ru.1c-bitrix.content-manager.pdf">
             <div class="icon">
                 <img src="/img/logos/1c_bitrix_logo.svg">
             </div>
@@ -39,7 +39,7 @@ title: Portfolio
         </a>
     </li>
     <li class="certificate">
-        <a href="./com.microsoft.mva.js-express-dive.pdf">
+        <a href="./certificates/com.microsoft.mva.js-express-dive.pdf">
             <div class="icon">
                 <img src="/img/logos/nodejs_logo.svg">
             </div>
@@ -96,15 +96,17 @@ URL | CMS | Title
 Название | Описание
 --- | ---
 [apt-beget](https://github.com/ford153focus/apt-beget) | Собрание скриптов для установки софта на shared-хостинге BeGet с поправкой на особенности хостера
-[csgo_upd_rss](https://github.com/ford153focus/csgo_upd_rss) | Простенький crawler на C# - парсим страничку и генерим Atom RSS XML
-[popingui](https://github.com/ford153focus/popingui) | Многопоточный ping множества таргетов с отображением результата в ncurses-табличке
+[csgo_upd_rss](https://github.com/ford153focus/csgo_upd_rss) | Простой crawler на C# - парсим страничку и генерим Atom RSS XML
 [html5terminal](https://github.com/ford153focus/html5terminal) | Примитивный эмулятор терминала построенный вокруг `passthru()`
+[popingui](https://github.com/ford153focus/popingui) | Многопоточный ping множества таргетов с отображением результата в ncurses-табличке
+[topographer](https://github.com/ford153focus/topographer) | Простой генератор sitemap на C#
+[wiki.beget.tech](https://github.com/ford153focus/wiki.beget.tech) | Справочный сайт, написанный с помощью Jekyll
 
 ## Тестовые задания
 
 URL | Описание
 --- | ---
-https://github.com/ford153focus/simple-shortcode-generator | Простенький укорачиватель ссылок без использования фрэймворков.
+https://github.com/ford153focus/simple-shortcode-generator | Простой укорачиватель ссылок, написанный без использования фрэймворков.
 
 <hr>
 
