@@ -233,10 +233,32 @@ WebCam | Logitech C210
 WLAN | D-Link DWA510 | Ralink RT61
 
 <style>
+#home-pc ~ table th {
+    width: initial;
+}
+#any-partdevice-that-was-used-and-tested ~ table th:nth-child(1) {
+    min-width: 120px;
+}
+#any-partdevice-that-was-used-and-tested ~ table th:nth-child(2) {
+    min-width: 350px;
+}
+#any-partdevice-that-was-used-and-tested ~ table th:nth-child(3) {
+    min-width: 300px;
+}
+#any-partdevice-that-was-used-and-tested ~ table th:nth-child(4) {
+    min-width: 260px;
+}
+
 #any-partdevice-that-was-used-and-tested ~ table th {
     width: initial;
 }
 #any-partdevice-that-was-used-and-tested ~ table th:first-child {
-    width: 135px;
+    width: 140px;
+}
+#any-partdevice-that-was-used-and-tested ~ table th:nth-child(2) {
+    width: 310px;
+}
+#any-partdevice-that-was-used-and-tested ~ table th:nth-child(3) {
+    width: 300px;
 }
 </style>
