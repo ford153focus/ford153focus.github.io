@@ -24,8 +24,8 @@ Display | Rubin RB-50D9F2TC | 50" TV
 Soundcard | ESI MAYA 44 USB
 Headphones | Creative HQ1600
 WebCam | Logitech C210
-Keyboard | Rapoo E9050 | Compact tenkeyless wireless keyboard
-Mouse | A4Tech R4
+Keyboard | Logitech K120 | Compact tenkeyless wireless keyboard
+Mouse | Logitech G102
 Case | Exegate 4139L | 4U server case
 Power Supply | FSP Epsilon 80+ | 900W
 OS | GNU/Linux KDE Neon 18.04
@@ -47,19 +47,19 @@ CPU | AMD Phenom 2 X4 955 | 4100MHz(oc), Socket AM3 | Seems like degradated afte
 CPU | IBM Cyrix-M | 233MHz, Socket7 | -
 CPU | Intel Celeron | 2400MHz, Northwood, Socket 478
 CPU | Intel Celeron | 2700MHz, Northwood, Socket 478
-CPU | Intel Core i3-3225
-CPU | Intel Core i3-4170
-CPU | Intel Core i3-4340 | 3600MHz
-CPU | Intel Core i3-540 | oc 4600MHz | But even with 4600MHz weaker then AMD Phenom2 X4 965 with 4100MHz
-CPU | Intel Core i5-4670
-CPU | Intel Core2Duo E4500 | 2940MHz(oc), Socket 775 | -
-CPU | Intel Core2Duo E7300 | 3670MHz(oc), Socket 775 | -
-CPU | Intel Pentium 4 | 3000MHz, Socket478, Northwood | Very hot. 100C? It's OK
-CPU | Intel Pentium 4 631 | 3000MHz, Socket 775, Conroe
+CPU | Intel Core i3-3225 | 2c/4t, IvyBridge
+CPU | Intel Core i3-4170 | 2c/4t, Haswell
+CPU | Intel Core i3-4340 | 2c/4t, 3600MHz, Haswell
+CPU | Intel Core i3-540 | 2c/4t, oc 4600MHz | But even with 4600MHz weaker then AMD Phenom2 X4 965 with 4100MHz
+CPU | Intel Core i5-4670 | 4c/4t
+CPU | Intel Core2Duo E4500 | 2c/2t, 2940MHz(oc), Socket 775 | -
+CPU | Intel Core2Duo E7300 | 2c/2t, 3670MHz(oc), Socket 775 | -
+CPU | Intel Pentium 4 | 1c/1t, 3000MHz, Socket478, Northwood | Very hot. 100C? It's OK
+CPU | Intel Pentium 4 631 | 1c/2t, 3000MHz, Socket 775, Conroe
 CPU | Intel Pentium D 840 | 3200MHz | Lower than stock E4500 at 2.2 GHz
-CPU | Intel Pentium Dual-Core E5200
-CPU | Intel Pentium E5200 | 2940MHz(oc), Socket 775
-CPU | Intel Xeon X3450 | 3520MHz(oc)
+CPU | Intel Pentium E5200 | 2c/2t, 2940MHz(oc), Socket 775
+CPU | Intel Xeon X3450 | 4c/8t, 3520MHz(oc)
+CPU | Intel Xeon E3-1220 | 4c/4t, 3100MHz, Sandy Bridge
 Display | Acer H236HL
 Display | Rubin RB-50D9F2TC | 50" TV
 Display | Samsung UE32EH4000WXRU | 32" TV
@@ -137,10 +137,13 @@ Mouse | A4Tech R4 | - | Awesome, wireless mouse really can be gaming mouse. Rech
 Mouse | A4Tech X-718BK
 Mouse | A4Tech X5-20MD
 Mouse | A4Tech X5-3D | - | Even don't try to play with it
-Mouse | A4Tech XL-710H
-Mouse | A4Tech XL-750H
+Mouse | A4 Tech X6-70D
+Mouse | A4Tech X-710BK
+Mouse | A4Tech XL-750BK
+Mouse | A4Tech XL-755BK
 Mouse | A4Tech XL-760H
 Mouse | Genius NetScroll 130 Black PS/2
+Mouse | Logitech G102
 Mouse | Logitech G500 | - | out of order, wire damage
 Mouse | Logitech M100
 Mouse | Logitech M185 | - | Very careful work with battery, can work some month with 1 battery. But absolutely uncomfortable and useless for man with big hands
@@ -161,7 +164,7 @@ Phone | Alcatel Pixi 3(4) | Cyanogenmod 12.1 | $40 phone
 Phone | Apple iPhone 4S
 Phone | Ericsson T68i
 Phone | Fly B600 | - | Out of order
-Phone | Huawei U8110 | - | Updated to 4.0.4 (CyanogenMod 7) and overclocked to 710 MHz. not so low as you can imagine, but battery is weak point
+Phone | Huawei U8110 | - | Updated to 4.0.4 (CyanogenMod 7) and overclocked to 710 MHz. Not so low as you can imagine, but battery is weak point
 Phone | iconBIT NetTAB Mercury Quad | - | Great assembly, shitty firmware
 Phone | Inch Regulus 3 | - | Tablet, "white box".
 Phone | LG Nexus 4
@@ -171,7 +174,7 @@ Phone | Nokia 2650 | - | Very strong case. Very beauty minimalistic design. But 
 Phone | Nokia 3310 | - | I'll never understand hype around this mediocre phone
 Phone | Nokia 3410 | - | Screen failed
 Phone | Nokia 5800 | - | Dumb touchscreen
-Phone | Nokia 6630 | - | Still alive!
+Phone | Nokia 6630 | - |
 Phone | Nokia 7610 | - | Design for design, very uncomfortable
 Phone | Nokia N73 | - | Damn joystick
 Phone | Nokia N81 | - | Low case
@@ -199,6 +202,7 @@ Phone | Zifro Vivid ZS-6500 | 6.5" | Bad firmware, bad hardware. Low home button
 Power Supply | Cooler Master Thunder | 500W
 Power Supply | FSP ATX-450PNR | 450W
 Power Supply | FSP Epsilon 80+ | 900W
+Prebuilt PC | Dell OptiPlex 990 | i5-2400 | Really silent
 Soundcard | Creative Audigy 2ZS | SB0350, SigmaTel STAC9750(51) | Difference between SB Audigy Value and this is very small. At least, less than difference in price.
 Soundcard | Creative Audigy SE | SB0090
 Soundcard | Creative Audigy Value | SB0570
@@ -210,10 +214,10 @@ Videocard | AMD/ATi Radeon HD5450 | Sapphire
 Videocard | AMD/ATi Radeon HD5770 | Sapphire | Out of order (but after months of 24/7)
 Videocard | AMD/ATi Radeon HD6570 | Sapphire
 Videocard | AMD/ATi Radeon HD6770 | Sapphire
-Videocard | AMD/ATi Radeon HD7850 | MSI, GCN1, 1024 cores, 256bit, 2048Mb | Aka R7 370
+Videocard | AMD/ATi Radeon HD7850 | MSI, GCN 1.0, 1024SP, 256bit, 2048Mb | Aka R7 370
 Videocard | nVidia GeForce 4 MX440
 Videocard | nVidia GeForce 8600GTS | Gigabyte
-Videocard | nVidia GeForce 9400GT
+Videocard | nVidia GeForce 9400GT | Palit
 Videocard | nVidia GeForce 9800GT | ASUS | out of order
 Videocard | nVidia GeForce 9800GT | Palit | out of order
 Videocard | nVidia GeForce 9800GT | Zotac | out of order
