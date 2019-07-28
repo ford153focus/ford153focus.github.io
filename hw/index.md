@@ -236,13 +236,13 @@ WLAN | D-Link DWA510 | Ralink RT61
 #home-pc ~ table th {
     width: initial;
 }
-#any-partdevice-that-was-used-and-tested ~ table th:nth-child(1) {
+#home-pc ~ table th:nth-child(1) {
     min-width: 120px;
 }
-#any-partdevice-that-was-used-and-tested ~ table th:nth-child(2) {
+#home-pc ~ table th:nth-child(2) {
     min-width: 350px;
 }
-#any-partdevice-that-was-used-and-tested ~ table th:nth-child(3) {
+#home-pc ~ table th:nth-child(3) {
     min-width: 300px;
 }
 
