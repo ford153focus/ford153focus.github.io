@@ -108,6 +108,11 @@ URL | Описание
 --- | ---
 https://github.com/ford153focus/simple-shortcode-generator | Простой укорачиватель ссылок, написанный без использования фрэймворков.
 
+## Прочие бэйджи
+
+<script src="https://profile.codersrank.io/widget/widget.js"></script>
+<codersrank-widget username="ford153focus"></codersrank-widget>
+
 <hr>
 
 Список сильно неполный и не охватывает некоторые периоды работы, некоторые проекты и некоторые задачи
