@@ -9,7 +9,7 @@
 title: Focus' Tech Blog
 email: ford153focus@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  no desc this time
+  Ford's Garage in the internet
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://ford153focus.github.io" # the base hostname & protocol for your site
 twitter_username: ford153focus
