@@ -1,5 +1,5 @@
 module Jekyll
-    class ImgWrapper < Liquid::Tag
+    class WrappedImageTag < Liquid::Tag
 
       def initialize(tag_name, text, tokens)
         super
@@ -12,4 +12,4 @@ module Jekyll
     end
   end
 
-  Liquid::Template.register_tag('img2', Jekyll::ImgWrapper)
+  Liquid::Template.register_tag('img2', Jekyll::WrappedImageTag)

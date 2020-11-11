@@ -1,5 +1,5 @@
 module Jekyll
-  require 'haml'
+  require 'HamlConverter'
   class HamlConverter < Converter
     safe true
     priority :low
