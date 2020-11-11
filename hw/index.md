@@ -24,11 +24,11 @@ Display | Rubin RB-50D9F2TC | 50" TV
 Soundcard | ESI MAYA 44 USB
 Headphones | Creative HQ1600
 WebCam | Logitech C210
-Keyboard | Logitech K120 | Compact tenkeyless wireless keyboard
+Keyboard | Logitech K120
 Mouse | Logitech G102
 Case | Exegate 4139L | 4U server case
 Power Supply | FSP Epsilon 80+ | 900W
-OS | GNU/Linux KDE Neon 18.04
+OS | GNU/Linux KDE Neon 20.04
 
 ## Any part/device that was used and tested
 
@@ -51,6 +51,7 @@ CPU | Intel Core i3-3225 | 2c/4t, IvyBridge
 CPU | Intel Core i3-4170 | 2c/4t, Haswell
 CPU | Intel Core i3-4340 | 2c/4t, 3600MHz, Haswell
 CPU | Intel Core i3-540 | 2c/4t, oc 4600MHz | But even with 4600MHz weaker then AMD Phenom2 X4 965 with 4100MHz
+CPU | Intel Core i3-7100 | 2c/4t, Kaby Lake
 CPU | Intel Core i5-4670 | 4c/4t
 CPU | Intel Core2Duo E4500 | 2c/2t, 2940MHz(oc), Socket 775 | -
 CPU | Intel Core2Duo E7300 | 2c/2t, 3670MHz(oc), Socket 775 | -
@@ -129,11 +130,13 @@ Motherboard | ASUS P5KPL-AM SE | Socket 775, Intel G31 | Cheapest mb in those ti
 Motherboard | ASUS P5Q Pro | Socket 775, Intel P45
 Motherboard | ASUS Sabertooth 990FX R2.0 | Socket AM3+, AMD990
 Motherboard | Gigabyte 8IPE1000-G | Socket 478, Intel i865 | out of order
+Motherboard | Gigabyte B250M-D2V-CF
 Motherboard | Gigabyte GA-970A-D3 | Socket AM3+, AMD970 | out of order
 Motherboard | Gigabyte GA-PH67A-D3-B3 | Socket 1155, Intel H67
 Motherboard | Zida TX98 | Socket 7 | -
 Mouse | A4Tech Bloody V7 | - | -
 Mouse | A4Tech R4 | - | Awesome, wireless mouse really can be gaming mouse. Rechargeable battery is required.
+Mouse | A4Tech OP-550NU
 Mouse | A4Tech X-718BK
 Mouse | A4Tech X5-20MD
 Mouse | A4Tech X5-3D | - | Even don't try to play with it
@@ -203,6 +206,7 @@ Power Supply | Cooler Master Thunder | 500W
 Power Supply | FSP ATX-450PNR | 450W
 Power Supply | FSP Epsilon 80+ | 900W
 Prebuilt PC | Dell OptiPlex 990 | i5-2400 | Really silent
+RAM | CMK8GX4M1A2400C16
 Soundcard | Creative Audigy 2ZS | SB0350, SigmaTel STAC9750(51) | Difference between SB Audigy Value and this is very small. At least, less than difference in price.
 Soundcard | Creative Audigy SE | SB0090
 Soundcard | Creative Audigy Value | SB0570
