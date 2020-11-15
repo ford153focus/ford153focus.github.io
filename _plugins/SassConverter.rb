@@ -1,5 +1,5 @@
 module Jekyll
-  require 'SassConverter'
+  require 'sass'
   class SassConverter < Converter
     safe true
     priority :low
