@@ -2,7 +2,7 @@
 ---
 
 $page-size: 80%;
-$footer-size: 75px;
+$footer-size: 50px;
 $block-padding: 10px 20px;
 $block-border-radius: 10px;
 
@@ -75,11 +75,14 @@ body {
 		.container {
 			border-radius: 0 0 $block-border-radius $block-border-radius;
 			position: relative;
+			& > p {
+				margin: 0;
+				padding: 0;
+			}
 		}
 		.site_title {
 			font-family: "Ford Script", cursive;
-			font-size: 44px;
-			float: left;
+			font-size: 32px;
 			a:hover, a:visited, a:focus {
 				color: #eee;
 				text-decoration: none;
@@ -87,9 +90,9 @@ body {
 		}
 
 		.site_desc {
-			//margin: -8px 0;
-			float: right;
-			margin-top: 20px;
+			position: absolute;
+			top: 20px;
+			right: 3mm;
 		}
 
 		/*BreadCrums*/
@@ -168,16 +171,19 @@ body {
 		width: 100%;
 		.container {
 			border-radius: $block-border-radius $block-border-radius 0 0;
+			min-height: $footer-size;
+			position: relative;
 		}
 		.author {
-			float: left;
 			font-family: "Ford Script", cursive;
-			font-size: 40px;
+			font-size: 24px;
+			margin-bottom: -24px;
 		}
 
 		.badges {
-			float: right;
-			padding-top: 10px;
+			position: absolute;
+			top: 3mm;
+			right: 3mm;
 			img {
 				height: 32px !important;
 				background-color: rgba(255, 255, 255, 0.2);
