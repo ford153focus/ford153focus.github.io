@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Starter Template · Bootstrap v5.1</title>
+
+    <!-- Bootstrap core -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.1/font/bootstrap-icons.min.css" integrity="sha512-WYaDo1TDjuW+MPatvDarHSfuhFAflHxD87U9RoB4/CSFh24/jzUHfirvuvwGmJq0U7S9ohBXy4Tfmk2UKkp2gA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .container-fluid {
+            margin-top: 1cm;
+        }
+
+        td.add-to-cart {
+            vertical-align: middle;
+            text-align: center;
+            font-size: 1cm;
+            cursor: pointer;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .menu .list-group-item {
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <ul class="list-group menu">
+                    <li data-target-tab="боеприпасы" class="list-group-item disabled">боеприпасы</li>
+                    <li data-target-tab="одежда" class="list-group-item disabled">одежда</li>
+                    <li data-target-tab="пистолеты" class="list-group-item active">оружие :: пистолеты</li>
+                    <li data-target-tab="дробовики" class="list-group-item">оружие :: дробовики</li>
+                    <li data-target-tab="винтовки" class="list-group-item">оружие :: Карабины и винтовки</li>
+                    <li data-target-tab="корзина" class="list-group-item">Корзина</li>
+                </ul>
+            </div>
+            <div class="col-9 tab-content" id="пистолеты">
+                <table class="table table-hover table-bordered table-sm">
+                    <thead>
+                        <tr>
+                            <th class="img">Внешний вид</th>
+                            <th class="model">Модель</th>
+                            <th class="dmg">Урон</th>
+                            <th class="avg-dmg">Сред. урон</th>
+                            <th class="shoot-speed">Скрстр.</th>
+                            <th class="dps">DPS</th>
+                            <th class="bd">БД</th>
+                            <th class="sd">СД</th>
+                            <th class="dd">ДД</th>
+                            <th class="reload">Перезарядка</th>
+                            <th class="ammunition">Боезапас</th>
+                            <th class="bullet">Патрон</th>
+                            <th class="min-power">Мин. сила</th>
+                            <th class="rariry">Редкость</th>
+                            <th class="weight">Вес</th>
+                            <th class="price">Цена</th>
+                            <th class="props">Свойства</th>
+                            <th class="add-to-cart">Купить</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="img"><img src="https://lh6.googleusercontent.com/qsCFHiXZWDMV7TJcwvgxaESGFHJVWXJ4i6IirmejQ024caH2twnbuZaJb7s6vC89-GqZ8XPjLfan9mCObEYp9bPD4IK065ep-pP_-8GNIA0hmF2b22_iTTj6CbtvVaDOEOoHr3Fsu4YuxURCQFk=w103-h39"></td>
+                            <td class="model"><span style="font-weight:bold;">"Кольт"<br></span>Кольт Модель 1873</td>
+                            <td class="dmg">1d10</td>
+                            <td class="avg-dmg">6,6</td>
+                            <td class="shoot-speed">2</td>
+                            <td class="dps">13,2</td>
+                            <td class="bd">25</td>
+                            <td class="sd">50</td>
+                            <td class="dd">100</td>
+                            <td class="reload">1</td>
+                            <td class="ammunition">6</td>
+                            <td class="bullet">.45</td>
+                            <td class="min-power">-</td>
+                            <td class="rariry">1</td>
+                            <td class="weight">1</td>
+                            <td class="price">$50</td>
+                            <td class="props">Одинарного действия</td>
+                            <td class="add-to-cart"><i class="bi bi-cart-plus"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://lh3.googleusercontent.com/lVbTnHieE11mTlRtrrgc2M1o2nrbCOtPBR_L6cLmUq-1LlZ1mgqPia1UTPzIrBrImO3Sor69XxqpfhtGo5WWYLR-0L9bFeCFCOT_er96uj2J2u3qUJtcM-yL28_h5gKJkB1ZqZQvYQ=w103-h39"></td>
+                            <td class="model"> "Скофилд"<br><span style="font-weight:normal;">Смит и Вессон Модель 3</span></td>
+                            <td class="dmg">1d10</td>
+                            <td class="avg-dmg">6,6</td>
+                            <td class="shoot-speed">2</td>
+                            <td class="dps">13,2</td>
+                            <td class="bd">30</td>
+                            <td class="sd">60</td>
+                            <td class="dd">120</td>
+                            <td class="reload">1</td>
+                            <td class="ammunition">6</td>
+                            <td class="bullet">.45</td>
+                            <td class="min-power">-</td>
+                            <td class="rariry">1</td>
+                            <td class="weight">1</td>
+                            <td class="price">$84</td>
+                            <td class="props">Одинарного действия</td>
+                            <td class="add-to-cart"><i class="bi bi-cart-plus"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://lh5.googleusercontent.com/HPl7qCDHakt6cMcj0YExOZr9UUIP8RItn4oj7q0BVHgsCVJBoCd4RVx-pcw2yExIGPcgfbGPXFk3jZ9Ub3jLJ1KwkqdC9Xzb5PYPKFB-dl87frdgESAZEFTB3olqx2QWY_FBGsBzMw=w103-h39"></td>
+                            <td class="model">Револьвер Ле Ма</td>
+                            <td class="dmg">2d6</td>
+                            <td class="avg-dmg">9,3</td>
+                            <td class="shoot-speed">2</td>
+                            <td class="dps">18,6</td>
+                            <td class="bd">25</td>
+                            <td class="sd">50</td>
+                            <td class="dd">100</td>
+                            <td class="reload">2</td>
+                            <td class="ammunition">9+1</td>
+                            <td class="bullet">.45 + 12 калибр</td>
+                            <td class="min-power">-</td>
+                            <td class="rariry">1</td>
+                            <td class="weight">2</td>
+                            <td class="price">$155</td>
+                            <td class="props">Одинарного действия</td>
+                            <td class="add-to-cart"><i class="bi bi-cart-plus"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://lh6.googleusercontent.com/PWQglmFYZPchUwUkh_uCDD5ZLa_l-t_RfxdhlkB3csvTWgjIPi_qbKQm0KFUyPJnZ6k2iGCFSp9sroNZThtNOA51_RfAaHdWpxan-Vt8OmB9z6eMHkMDU-1CjQ1qwhWz007J3uX5OQ=w103-h39"></td>
+                            <td class="model">"Армейский Кольт"<br><span style="font-weight:normal;">Кольт Модель 1851</span></td>
+                            <td class="dmg">2d6+1</td>
+                            <td class="avg-dmg">10,3</td>
+                            <td class="shoot-speed">2</td>
+                            <td class="dps">20,6</td>
+                            <td class="bd">30</td>
+                            <td class="sd">60</td>
+                            <td class="dd">120</td>
+                            <td class="reload">2</td>
+                            <td class="ammunition">6</td>
+                            <td class="bullet">.45</td>
+                            <td class="min-power">-</td>
+                            <td class="rariry">1</td>
+                            <td class="weight">1</td>
+                            <td class="price">$275</td>
+                            <td class="props">Одинарного действия</td>
+                            <td class="add-to-cart"><i class="bi bi-cart-plus"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://lh3.googleusercontent.com/bIJp9RpZd30rAnWavQbSSoBVelS2uAbghYgdG-JW6JMK9mwmAMKVIUHL1-R70SAhDM5PDLDljNAqE-S7fFWRSili5mh59KZlooMdegUT5Zbn000YuerGJoQXXWjRgv5r7eHXJU4aQg=w103-h39"></td>
+                            <td class="model">"Кольт двойного действия"<br><span style="font-weight:normal;">Кольт Модель 1892</span></td>
+                            <td class="dmg">1d8+1</td>
+                            <td class="avg-dmg">6,6</td>
+                            <td class="shoot-speed">3</td>
+                            <td class="dps">19,8</td>
+                            <td class="bd">20</td>
+                            <td class="sd">40</td>
+                            <td class="dd">80</td>
+                            <td class="reload">1</td>
+                            <td class="ammunition">6</td>
+                            <td class="bullet">.45</td>
+                            <td class="min-power">d6</td>
+                            <td class="rariry">2</td>
+                            <td class="weight">1</td>
+                            <td class="price">$115</td>
+                            <td class="props">Двойного действия</td>
+                            <td class="add-to-cart"><i class="bi bi-cart-plus"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://lh4.googleusercontent.com/7qZhzWumzIWKZf1SxA7M7ifV78tulSOr2Rszmz9o6pBujwIa-4fLa9-egwj46HdyjCq4zCsaB-B5R_-ZYQAdbT7f8n9LlR6GO5XROMaKSLhCKM0Pu3wqvUelM8lPEznow-f3n-vmZA=w103-h39"></td>
+                            <td class="model">"Вулканик"<br><span style="font-weight:normal;">Смит и Вессон 1855</span></td>
+                            <td class="dmg">2d8</td>
+                            <td class="avg-dmg">11,3</td>
+                            <td class="shoot-speed">2</td>
+                            <td class="dps">22,6</td>
+                            <td class="bd">30</td>
+                            <td class="sd">60</td>
+                            <td class="dd">120</td>
+                            <td class="reload">2</td>
+                            <td class="ammunition">8</td>
+                            <td class="bullet">.45</td>
+                            <td class="min-power">-</td>
+                            <td class="rariry">3</td>
+                            <td class="weight">1</td>
+                            <td class="price">$150</td>
+                            <td class="props">Скоба</td>
+                            <td class="add-to-cart"><i class="bi bi-cart-plus"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://lh6.googleusercontent.com/3H4lOhAUdg8lIY5zBxDXyf8Z8RBRKWf-5T58iD6fRvPzYr9ANaTzjXAeXzozxBGJJlowF34NZnbutkCYxE7x6TaKR_MTy3m9ThIhC91BlhCNpyRjzoJ7xKSX7_s1h8_cdBuYs-g6LA=w103-h39"></td>
+                            <td class="model">Борхардт К93</td>
+                            <td class="dmg">1d6</td>
+                            <td class="avg-dmg">4,7</td>
+                            <td class="shoot-speed">4</td>
+                            <td class="dps">18,8</td>
+                            <td class="bd">25</td>
+                            <td class="sd">50</td>
+                            <td class="dd">100</td>
+                            <td class="reload">0</td>
+                            <td class="ammunition">8</td>
+                            <td class="bullet">7,62</td>
+                            <td class="min-power">-</td>
+                            <td class="rariry">3</td>
+                            <td class="weight">1</td>
+                            <td class="price">$210</td>
+                            <td class="props">Быстрая перезарядка</td>
+                            <td class="add-to-cart"><i class="bi bi-cart-plus"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://lh6.googleusercontent.com/TuPUgU90Rnip-aHSsakTE4AVgrCc2xl6hQxXuXY0u_xQbIikkSHPQALYmTfPhTdSAwTgoJ-Kp3fLpP9YynRKjrQ2izNb402lWh_KbyCwLEw1VmONXOliqwFxS674fpLlq9JEpJ14YQ=w103-h39"></td>
+                            <td class="model">Маузер К96</td>
+                            <td class="dmg">1d8</td>
+                            <td class="avg-dmg">5,6</td>
+                            <td class="shoot-speed">4</td>
+                            <td class="dps">22,4</td>
+                            <td class="bd">25</td>
+                            <td class="sd">50</td>
+                            <td class="dd">100</td>
+                            <td class="reload">0</td>
+                            <td class="ammunition">10</td>
+                            <td class="bullet">7,62</td>
+                            <td class="min-power">-</td>
+                            <td class="rariry">4</td>
+                            <td class="weight">1</td>
+                            <td class="price">$250</td>
+                            <td class="props">Быстрая перезарядка</td>
+                            <td class="add-to-cart"><i class="bi bi-cart-plus"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="img"><img src="https://lh5.googleusercontent.com/31m5Pw8td4CJtxhTEvfFCH1Lfc3Pl3rORX2TTv-aZQBJW1PXwRLyFwWEwuHasztxbyorRE6Iu_4ilGwwuyrEa8Lqkx14OaouZxxrVEAzVo1PiAjHZDvrtxsFB82IS98hhNSBwjObyw=w103-h39"></td>
+                            <td class="model">Браунинг М1899</td>
+                            <td class="dmg">1d8</td>
+                            <td class="avg-dmg">5,6</td>
+                            <td class="shoot-speed">3</td>
+                            <td class="dps">16,8</td>
+                            <td class="bd">30</td>
+                            <td class="sd">60</td>
+                            <td class="dd">120</td>
+                            <td class="reload">0</td>
+                            <td class="ammunition">8</td>
+                            <td class="bullet">7,62</td>
+                            <td class="min-power">-</td>
+                            <td class="rariry">4</td>
+                            <td class="weight">1</td>
+                            <td class="price">$350</td>
+                            <td class="props">Быстрая перезарядка</td>
+                            <td class="add-to-cart"><i class="bi bi-cart-plus"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-9 tab-content" id="корзина">
+                <table class="table table-hover table-bordered table-sm">
+                    <thead>
+                        <tr>
+                            <th class="img">Внешний вид</th>
+                            <th class="model">Наименование</th>
+                            <th class="price">Цена</th>
+                            <th class="weight">Вес</th>
+                            <th class="count">Кол-во</th>
+                            <th class="total-price">Сумма</th>
+                            <th class="total-weight">Общ. вес</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //show first tab
+        $('.tab-content').first().show();
+
+        //menu handler
+        $('.menu .list-group-item').click(e => {
+            $('.menu .list-group-item').removeClass('active');
+            $(e.target).addClass('active');
+
+            $('.tab-content').hide();
+            $('#'+e.target.getAttribute('data-target-tab')).show();
+        });
+
+        //add-to-cart handler
+        $(".add-to-cart i").click(e => {
+            let new_item = e.target.parentElement.parentElement;
+            let new_item_model = new_item.querySelector('td.model');
+
+            let cart_items = Array.from(document.querySelectorAll('#корзина tbody tr td.model')).filter(c_i => c_i.innerHTML==new_item_model.innerHTML);
+
+            if (cart_items.length === 0) {
+                let a='<tr>';
+                a += new_item.querySelector('td.img').outerHTML;
+                a += new_item.querySelector('td.model').outerHTML;
+                a += new_item.querySelector('td.price').outerHTML;
+                a += new_item.querySelector('td.weight').outerHTML;
+                a += '<td class="count"><i class="fa-solid fa-circle-minus"></i> <span>1</span> <i class="fa-solid fa-circle-plus"></i></td>';
+                a += '<td class="total-price">'+new_item.querySelector('td.price').innerHTML+'</td>';
+                a += '<td class="total-weight">'+new_item.querySelector('td.weight').innerHTML+'</td>';
+                a += '</tr>';
+                document.querySelector('#корзина tbody').insertAdjacentHTML('beforeEnd', a);
+            } else {
+                cart_items[0].querySelector('i.fa-circle-plus').click();
+            }
+        });
+
+        //in cart count changers
+        $( document.body ).on( "click", "#корзина td.count i", event => {
+            if (event.target.classList.contains('fa-circle-minus')) event.target.parentElement.querySelector('span').innerText--;
+            if (event.target.classList.contains('fa-circle-plus')) event.target.parentElement.querySelector('span').innerText++;
+
+            let cur_count = event.target.parentElement.querySelector('span').innerText
+            let price = event.target.parentElement.parentElement.querySelector('td.price').innerText.replace(/\$/g, '');
+            let weight = event.target.parentElement.parentElement.querySelector('td.weight').innerText;
+            event.target.parentElement.parentElement.querySelector('td.total-price').innerText = '$'+price*cur_count;
+            event.target.parentElement.parentElement.querySelector('td.total-weight').innerText = weight*cur_count;
+        });
+    </script>
+</body>
+
+</html>
