@@ -147,8 +147,6 @@ body {
 		}
 		/**/
 		
-		@import "code_blocks";
-
 		/**/
 		.article_list ul {
 			list-style-type: katakana;
@@ -196,6 +194,7 @@ body {
 	}
 }
 
+@import "code_blocks";
 // page-specific styles
 @import "main_page";
 @import "portfolio";
