@@ -13,7 +13,6 @@ function __frt__copyToClipBoard(node) {
         console.log('Oops, unable to copy');
     }
 
-    // Remove the selections - NOTE: Should use
-    // removeRange(range) when it is supported
+    // Remove the selections - NOTE: Should use removeRange(range) when it is supported
     window.getSelection().removeAllRanges();
 }

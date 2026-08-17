@@ -11,7 +11,7 @@ title: Portfolio
     <li class="certificate">
         <a href="./certificates/ru.intuit.php.jpeg">
             <div class="icon">
-                <img src="/img/logos/php_logo_colour.svg">
+                <img src="/static/img/logos/php_logo_colour.svg">
             </div>
             <div class="description">
                 Язык программирования<br/>PHP
@@ -21,7 +21,7 @@ title: Portfolio
     <li class="certificate">
         <a href="./certificates/ru.1c-bitrix.content-manager.pdf">
             <div class="icon">
-                <img src="/img/logos/1c_bitrix_logo.svg">
+                <img src="/static/img/logos/1c_bitrix_logo.svg">
             </div>
             <div class="description">
                 1С-Битрикс:<br/>Контент-менеджер
@@ -31,7 +31,7 @@ title: Portfolio
     <li class="certificate">
         <a href="https://certification.mail.ru/certificates/c5d658d6-ecae-4fdb-841c-a7ea6e9f9c32/">
             <div class="icon">
-                <img src="/img/logos/ruby_on_rails_logo.svg">
+                <img src="/static/img/logos/ruby_on_rails_logo.svg">
             </div>
             <div class="description">
                 Ruby on Rails<br/><i>(junior level)</i>
@@ -41,7 +41,7 @@ title: Portfolio
     <li class="certificate">
         <a href="./certificates/com.microsoft.mva.js-express-dive.pdf">
             <div class="icon">
-                <img src="/img/logos/nodejs_logo.svg">
+                <img src="/static/img/logos/nodejs_logo.svg">
             </div>
             <div class="description">
                 Экспресс-погружение в разработку приложений на JavaScript

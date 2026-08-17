@@ -1,10 +1,9 @@
----
----
-
-$page-size: 80%;
-$footer-size: 50px;
-$block-padding: 10px 20px;
-$block-border-radius: 10px;
+:root {
+	--page-size: 80%;
+	--footer-size: 50px;
+	--block-padding: 10px 20px;
+	--block-border-radius: 10px;
+}
 
 h1, h2, h3, h4, h5, h6, .title {
 	font-family: "Ford Antenna", Arial, sans-serif;
@@ -67,13 +66,13 @@ body {
 	position: relative;
 
 	.container {
-		padding: $block-padding;
+		padding: var(--block-padding);
 		background-color: #272c2d;
 	}
 
 	.header {
 		.container {
-			border-radius: 0 0 $block-border-radius $block-border-radius;
+			border-radius: 0 0 var(--block-border-radius) var(--block-border-radius);
 			position: relative;
 			& > p {
 				margin: 0;
@@ -114,7 +113,7 @@ body {
 
 	.title {
 		.container {
-			border-radius: $block-border-radius;
+			border-radius: var(--block-border-radius);
 			h1 {
 				text-align: center;
 				margin: 0;
@@ -124,7 +123,7 @@ body {
 
 	.content {
 		.container {
-			border-radius: $block-border-radius;
+			border-radius: var(--block-border-radius);
 		}
 
 		/*TAGS'n'SOURCES*/
@@ -159,17 +158,17 @@ body {
 	}
 
 	.footer_reserved_place {
-		height: $footer-size;
+		height: var(--footer-size);
 	}
 
 	.footer {
 		bottom: 0;
-		height: $footer-size;
+		height: var(--footer-size);
 		position: absolute;
 		width: 100%;
 		.container {
-			border-radius: $block-border-radius $block-border-radius 0 0;
-			min-height: $footer-size;
+			border-radius: var(--block-border-radius) var(--block-border-radius) 0 0;
+			min-height: var(--footer-size);
 			position: relative;
 		}
 		.author {
@@ -194,7 +193,105 @@ body {
 	}
 }
 
-@import "code_blocks";
-// page-specific styles
-@import "main_page";
-@import "portfolio";
+/**
+ * blocks for code fragments
+ */
+.console {
+    font-family: 'Terminus', monospace;
+    font-size: 21px;
+    background: #222;
+    margin-left: 32px;
+    margin-bottom: 5px;
+    overflow: auto;
+
+    .comment {
+        color: #099;
+        font-family: monospace;
+        font-style: italic;
+        font-size: 11px;
+    }
+}
+
+html.current-homepage {
+	.cat_list {
+		a {
+			background-color: rgba(111, 111, 111, 0.5);
+			background-position: left bottom;
+			background-repeat: no-repeat;
+			border-radius: 5px;
+			color: #eee;
+			display: inline-block;
+			font-family: 'Marck Script', sans-serif;
+			font-size: 22px;
+			height: 150px;
+			margin-left: 15px;
+			text-align: right;
+			width: 150px;
+		}
+
+		.blog {
+			background-image: url('/img/blog.png');
+			background-size: 74% auto;
+		}
+
+		.portfolio {
+			background-image: url('/img/portfolio.png');
+			background-size: 90% auto;
+		}
+	}
+}
+
+html.current-cv {
+	.certificates {
+		padding: 0;
+		margin: 0;
+		li {
+			border-radius: 5mm;
+			border: 2px solid #555753;
+			display: inline-block;
+			height: 6cm;
+			margin: 0 1mm 3mm 0;
+			vertical-align:top;
+			width: 5cm;
+			a {
+				display: block;
+				div {
+					padding: 3mm;
+					&.icon {
+						align-items: center;
+						display: flex;
+						height: 4cm;
+						justify-content: center;
+						img {
+							height: auto;
+							max-height: 100%;
+		
+							width: auto;
+							max-width: 100%;
+						}
+					}
+					&.description {
+						background-color: #555753;
+						border-radius: 0 0 5mm 5mm;
+						height: 2cm;
+						text-align: center;
+					}
+				}
+				
+			}
+		}
+	}
+
+	.involved_in {
+		table {
+			td:nth-of-type(1), 
+			th:nth-of-type(1) {
+				width: 10%;
+			}
+			td:nth-of-type(2), 
+			th:nth-of-type(2) {
+				width: 5%;
+			}
+		}
+	}
+}
