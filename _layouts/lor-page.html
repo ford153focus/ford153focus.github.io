@@ -1,5 +1,22 @@
 <!DOCTYPE html>
-<html>
+{%- comment -%} body tagger (build-time): mirrors static/js/script.js but computed in Liquid.
+    Liquid 4 (Jekyll 3) has no reject/push/pop, so empty segments are skipped inline. {%- endcomment -%}
+{%- assign raw_parts = page.url | relative_url | split: '/' -%}
+
+{%- assign html_classes = '' -%}
+{%- if raw_parts == empty -%}
+    {%- assign html_classes = 'current-homepage' -%}
+{%- else -%}
+    {%- assign current = raw_parts | last -%}
+    {%- for part in raw_parts -%}
+        {%- if part != '' and part != current -%}
+            {%- assign html_classes = html_classes | append: 'parent-' | append: part | append: ' ' -%}
+        {%- endif -%}
+    {%- endfor -%}
+    {%- assign html_classes = html_classes | append: 'current-' | append: current -%}
+{%- endif -%}
+
+<html lang="en" class="{{ html_classes }}">
 <head>
     {% include lor-head.html %}
 </head>

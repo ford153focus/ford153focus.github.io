@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+{%- assign raw_parts = page.url | relative_url | split: '/' -%}
+
+{%- assign html_classes = '' -%}
+{%- if raw_parts == empty -%}
+    {%- assign html_classes = 'current-homepage' -%}
+{%- else -%}
+    {%- assign current = raw_parts | last -%}
+    {%- for part in raw_parts -%}
+        {%- if part != '' and part != current -%}
+            {%- assign html_classes = html_classes | append: 'parent-' | append: part | append: ' ' -%}
+        {%- endif -%}
+    {%- endfor -%}
+    {%- assign html_classes = html_classes | append: 'current-' | append: current -%}
+{%- endif -%}
+
+<html lang="en" data-bs-theme="dark" class="{{ html_classes }}">
+    <head>
+        <title>{{ page.title | default: site.title | default: "Ford's Garage" }}</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- #region LIBRARIES / STYLESHEETS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"                    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.min.css"            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.arrows.min.css"     crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.autoplay.min.css"   crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.dots.min.css"       crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.expand.min.css"     crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.fullscreen.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.html.min.css"       crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.thumbs.min.css"     crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.toolbar.min.css"    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.video.min.css"      crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.zoomable.min.css"   crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/fancybox/fancybox.min.css"            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"                       crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css"              crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/notyf/3.10.0/notyf.min.css"                               crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- #endregion LIBRARIES / STYLESHEETS -->
+
+        <!-- #region PROJECT STYLES -->
+        <link rel="stylesheet" href="{{ "/static/css/fonts.css"  | relative_url }}" type="text/css" media="screen" />
+        <link rel="stylesheet" href="{{ "/static/css/styles.css" | relative_url }}" type="text/css" media="screen" />
+        
+        {% for css in page.additional_css %}
+            <link rel="stylesheet" href="{{ css | relative_url }}" type="text/css" media="screen" />
+        {% endfor %}
+        <!-- #endregion -->
+    </head>
+    <body>
+        {% if page.custom_header %}
+            {{ page.custom_header }}
+        {% else %}
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> 
+                <div class="container">
+                        <a href="/" class="align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none site-title"><span class="fs-1">{{ site.title | default: "Ford's Garage" }}</span></a>
+                        <span class="fs-6 site-descr">{{ site.description | default: "Small garage of one Ford in the big internet" }}</span>
+                        <div style="clear: both;"></div>
+                </div>
+            </header>
+        {% endif %}
+
+        <main>
+            <div class="container">
+                {{ content }}
+            </div>
+        </main>
+
+        <footer>
+        {% if page.custom_footer %}
+            {{ page.custom_footer }}
+        {% else %}
+            <div class="container">
+                <!-- no footer this time -->
+            </div>
+        {% endif %}
+        </footer>
+
+        <!-- #region LIBRARIES / SCRIPTS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"                  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.umd.js"                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.arrows.umd.min.js"     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.autoplay.umd.min.js"   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.autoscroll.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.dots.umd.min.js"       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.expand.umd.min.js"     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.fullscreen.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.html.umd.min.js"       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.lazyload.umd.min.js"   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.sync.umd.min.js"       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.thumbs.umd.min.js"     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.toolbar.umd.min.js"    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.video.umd.min.js"      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/carousel/carousel.zoomable.umd.min.js"   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/fancybox/fancybox.umd.js"                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/js/all.min.js"                            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"                       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/notyf/3.10.0/notyf.min.js"                                   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>try { Fancybox.bind("[data-fancybox]", {}); } catch { console.error('fancybox init failed'); }</script>
+        <script>try { hljs.highlightAll();                  } catch { console.error('highlight.js init failed'); }</script>
+        <script>try { window.notyf = new Notyf();           } catch { console.error('notyf init failed'); }</script>
+        <!-- #endregion LIBRARIES / SCRIPTS -->
+
+        <!-- #region PROJECT SCRIPTS -->
+        <script src="{{ "/static/scripts/script.js" | relative_url }}"></script>
+        <script src="{{ "/static/scripts/custom-tags.js" | relative_url }}"></script>
+        {% for js in page.additional_js %}
+        <script src="{{ js | relative_url }}"></script>
+        {% endfor %}
+        <!-- #endregion -->
+    </body>
+</html>

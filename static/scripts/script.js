@@ -13,5 +13,13 @@
         document.documentElement.classList.add(`parent-${split}`);
     }
     document.documentElement.classList.add(`current-${current}`);
-})()
+})();
 // #endregion body tagger
+
+(() => {
+    for (const element of document.getElementsByTagName('table')) {
+        element.classList.add('table')
+        element.classList.add('table-bordered')
+        element.classList.add('table-striped')
+    }
+})();
